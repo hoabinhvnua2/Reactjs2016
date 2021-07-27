@@ -65,6 +65,9 @@ section > span {
     color: green;
     margin: 10px 5px 2px;
     padding: 10px;
+    position: sticky;
+    top: 0;
+    background-color: brown;
 }
 
 /* padding cố 1 value -> mt, mr, mb, ml cùng 1 value */
@@ -120,6 +123,75 @@ section > span {
     right: 0;
     z-index: 1;
 }
+
+
+.customFixed {
+    height: 50px;
+    width: 50px;
+    background-color: aqua;
+    position: fixed;
+    bottom: 12px;
+    right: 12px;
+}
+
+
+.custom-animation {
+    height: 100px;
+    width: 100px;
+    background-color: yellow;
+    transition: all 3s;
+    animation-name: myAnimation;
+    animation-duration: 8s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: run;
+    position: relative;
+}
+
+@keyframes myAnimation {
+
+    0% {
+        top: 0;
+        left: 0;
+    }
+    25% {
+        background-color: green;
+        top: 0;
+        left: 300px;
+        transform: rotate(45deg);
+    }
+    50% {
+        background-color: aqua;
+        top: 300px;
+        left: 300px;
+        height: 300px;
+        width: 300px;
+        transform: rotate(90deg);
+    }
+    75% {
+        background-color: red;
+        top: 300px;
+        left: 0;
+        height: 300px;
+        width: 300px;
+        transform: rotate(180deg);
+    }
+
+    100% {
+        top: 0;
+        left: 0;
+        background-color: yellow;
+        height: 200px;
+        width: 200px;
+    }
+}
+
+.custom-animation:hover {
+    width: 300px;
+}
+
 
  
 
