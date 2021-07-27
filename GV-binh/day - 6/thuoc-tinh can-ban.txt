@@ -1,0 +1,14 @@
+1. display: grid
+2.  grid-template
+3.  gap   
+4.  grid-area: chia layout hoặc dùng để đặt tên cho item
+5.  grid-template-areas: 
+6.   justify-items
+7.    align-items
+8.  place-items
+9. justify-self
+10. align-self
+11. place-self
+12.  justify-content
+13.  align-content
+14. place-content
