@@ -1,0 +1,99 @@
+.custom-row-1 {
+    width: 100%
+}
+
+.custom-nav {
+    background-color:#2297F5;
+}
+
+.menu {
+    list-style: none;
+    text-align: center;
+    width: 100%;
+    font-size: 13px;
+    display: block;
+}
+
+.menu-item {
+    display: inline-table;
+    margin: 20px 0px 10px 10px;
+}
+
+.menu .active a {
+    color: yellow;
+}
+
+.menu-item a {
+    text-decoration: none;
+    color: white;
+}
+
+.menu-wrap {
+    align-items: center;
+}
+
+.logo {
+    text-align: center;
+    color: white;
+    font-weight: 700;
+}
+
+.logo p {
+    margin-top: 20px;
+}
+
+.bar-btn {
+    display: none;
+}
+
+/* Content */
+.about-us {
+    width: 100%;
+    margin-top: 70px;
+}
+
+.custom-about-us img {
+    width: 100%;
+}
+
+.strong-content {
+    font-weight: 600;
+}
+
+.small-content {
+    font-size: 12px;
+}
+
+
+.custom-image {
+    width: 100%;
+    margin-top: 70px ;
+}
+
+.font-weight-custom {
+    font-weight: 700 ;
+}
+
+.cont .container-fluid .news {
+    align-content: flex-end;
+}
+
+.custom-card a {
+    text-decoration: none;
+    color: black;
+}
+
+.content-news {
+    margin-top: 70px ;
+}
+
+.dash {
+    width: 20px;
+    aspect-ratio: auto 20/20;
+    height: 20px;
+}
+
+
+.contact-wrap .row {
+    width: 100%;
+}
