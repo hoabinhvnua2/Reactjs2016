@@ -1,186 +1,410 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- <link rel="stylesheet" href="./assets/css/style.css"> -->
-  <title> HomeWork-HTML-First</title>
+  <!-- Font Icons Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+  <!-- Link File CSS -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/responsive.css">
+
+  <title> HomeWork HTML/CSS </title>
 </head>
 
 <body>
-  <!-- Main -->
-  <!-- <div id="main"> -->
-  <!-- Header: Nav && Image -->
-  <header>
-    <!-- Nav: Logo(left), Navbar(right) -->
-    <nav class="container-menu">
-      <div class="logo"><a href="#"> CREVEA Inc. </a></div>
-      <div class="menu">
-        <ul>
-          <li><a href=""> Home </a></li>
-          <li class="items-uppercase"><a href=""> OurBusiness </a></li>
-          <li class="items-uppercase"><a href=""> About Us </a></li>
-          <li class="items-uppercase"><a href=""> News </a></li>
-          <li class="items-uppercase"><a href=""> Contact </a></li>
-        </ul>
-      </div>
-      <div class="search-btn">
-        <!-- <i class="search-icon ti-search"></i> -->
-      </div>
-    </nav>
-    <!--End: Nav -->
+  <!-- HEADER -->
+  <header id="header" class="header">
+    <div class="container">
+      <nav class="nav">
+        <!-- Nav__bars MOBILE -->
+        <div class="nav__bars-btn">
+          <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars"
+            class="svg-inline--fa fa-bars fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+            <path fill="currentColor"
+              d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z">
+            </path>
+          </svg>
+        </div>
+        <!-- Nav__bars MOBILE -->
 
-    <!--Section: Image && Text -->
-    <section id="slider">
-      <div class="slider-item">
-        <img src="./assets/img/students.jpg" style="max-width: 100%;" />
-      </div>
-    </section>
-    <!--End:Section: Image && Text -->
+        <!-- LOGO ## -->
+        <div class="logo">
+          <a href="#">
+            CREVEA Inc. 
+          </a>
+        </div>
+        <!-- ##:  LOGO ## -->
 
+        <!-- MENU ## -->
+        <div class="menu">
+          <ul>
+            <li class="menu-items active">
+              <a href="">
+                Home 
+              </a>
+            </li>
+            <li class="menu-items text-uppercase">
+              <a href="">
+                OurBusiness 
+              </a>
+            </li>
+            <li class="menu-items text-uppercase">
+              <a href="">
+                About Us 
+              </a>
+            </li>
+            <li class="menu-items text-uppercase">
+              <a href=""> 
+                News 
+              </a>
+            </li>
+            <li class="menu-items text-uppercase">
+              <a href="">
+                Contact 
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- ##: MENU ## -->
+        <!-- SEARCH ## -->
+        <div class="search">
+          <i class="bi bi-search"></i>
+        </div>
+        <!-- ##: SEARCH ## -->
+      </nav>
+    </div>
   </header>
-  <!-- End: Header -->
+  <!-- #: HEADER -->
 
-  <!-- Content :About Us, Education, New, Contacts -->
-  <section id="content">
-    <!-- About-Us -->
-    <div id="aboutus">
-      <!-- The left is paragraph -->
-      <article>
-        <h5 class="aboutus-heading"> About Us </h5>
-        <p class="about-text">
-          <strong>
-            Our goal is "to support and connect educational institutions, companies across the world by providing highly qualified/skilled human resource for mutual development and consulting services in job and skills training". Achieving this, we hope to contribute to the betterment of society.
-          </strong>
-        </p>
-        <p class="about-text-sub">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, ratione tempora sed
-          error earum voluptas aspernatur soluta minima? Quasi eius eaque asperiores magnam ipsum explicabo? Quasi earum
-          hic temporibus facere. </p>
-      </article>
-      <!--End: The left is paragraph -->
-
-      <!-- The right is a image -->
-      <aside>
-        <img src="./assets/img/Business.JPG" alt="Business.JPG" srcset="" style="max-width: 100%;">
-      </aside>
-      <!--End: The right is a image -->
-    </div>
-    <!-- End: About-Us -->
-
-<!-- Bị mắc ở phần này nhé!!! -->
-    <!-- Education -->
-    <div id="education">
-      <!-- Image -->
-      <section class="image">
-        <img src="./assets/img/Education2.jpg" alt="Education2.jpg">
-        <img src="./assets/img/Communication.jpg" alt="Communication.jpg" >
-      </section>
-      <!-- End: Image -->
-
-      <!-- Text && Image  -->
-      <section class="information">
-        <div class="text-header">
-          <h4> Our business </h4>
-        </div>
-
-        <div class="text-content">
-          <div class="image-icons">
-            <img src="" alt="HandSkate" srcset="" style="max-width: 20%;">
-          </div>
-          <h3 class="text-heading"> Education consulting </h3>
-          <div class="text-description">We offer various services as required from different educational institutions in Vietnam </div>
-        </div>
-
-        <div class="text-content">
-          <div class="image-icons">
-            <img src="" alt="HandSkate2" srcset="" style="max-width: 20%;">
-          </div>
-          <h3 class="text-heading"> Business consulting </h3>
-          <div class="text-description"> We  provide various services according to requests from foreign companies and educational institutions.</div>
-        </div>
-      </section>
-      <!--End: Text && Image  -->
-    </div>
-    <!--End: Education -->
-
-    <!-- News -->
-    <section id="news">
-      <section>
-        <h4 class="title-news"> News </h4>
-        <h3 class="news-heading"> Latest News </h3>
-      </section>
-      
-      <img src="./assets/img/News 2.jpg" alt="News 2.jpg" srcset="" class="news-img">
-      <section class="news-body" >
-        <h3 class="new-heading">Japanese staff agency company visited to Hanoi </h3>
-        <p class="news-detail-link"> Read more </p>
-        <!-- <i class="ti-arrow-right"></i> -->
-      </section>
-
-      <img src="./assets/img/News 1.jpg" alt="News 1.jpg" srcset="" class="news-img">
-      <section class="news-body">
-        <h3 class="new-heading">Japanese staff agency company visited to Hanoi </h3>
-        <p class="news-detail-link"> Read more </i></p>
-        <!-- <i class="ti-arrow-right"></i> -->
-      </section>
-
-      <img src="./assets/img/Class.jpg" alt="Class.jpg" srcset="" class="news-img">
-      <section class="news-body">
-        <h3 class="new-heading">Japanese staff agency company visited to Hanoi </h3>
-        <p class="news-detail-link"> Read more </p>
-        <!-- <i class="ti-arrow-right"></i> -->
-      </section>
+  <!-- MAIN CONTENT -->
+  <main id="content-page">
+    <!-- SECTION SLIDER ## -->
+    <section class="slider">
+      <div class="container">
+        <img src="./assets/img/students.jpg" alt="Students.jpg" class="slider-img-fluid" />
+      </div>
     </section>
-    <!-- End: News -->
+    <!--  ##: SECTION SLIDER -->
 
-    <!-- Contacts -->
+    <!-- SECTION ABOUT US ## -->
+    <section class="about-us">
+      <div class="container">
+        <!-- ABOUT-TEXT ### -->
+        <div class="about-text">
+          <h4 class="about-title text-uppercase">
+            About Us
+          </h4>
+          <p class="about-description">            
+            Our goal is "to support and connect educational institutions, companies across the world by providing
+            highly qualified/skilled human resource for mutual development and consulting services in job and skills
+            training". Achieving this, we hope to contribute to the betterment of society.            
+          </p>
+          <p class="about-description-sub">
+            Our staff are highly experienced and senior members of diverse backgrounds in educational institutions and companies in Vietnam other territories across the globe.
+          </p>
+        </div>
+        <!--###: ABOUT-TEXT -->
+
+        <!-- ABOUT-IMG ### -->
+        <div class="about-img">
+          <img src="./assets/img/Business.JPG" alt="Business.JPG" class="img-fluid">
+        </div>
+        <!--###  ABOUT-IMG ### -->
+      </div>
+    </section>
+    <!-- ##: SECTION ABOUT US -->
+
+    <!-- SECTION OUR BUSINESS ## -->
+    <section class="our-business">
+      <div class="container">
+        <!--  EDUCATION IMG  ### -->
+        <div class="education-img">
+          <img src="./assets/img/Education2.jpg" alt="Education2.jpg" class="img-fluid">
+        </div>
+        <!-- ###: EDUCATION IMG -->
+
+        <!--  COMMUNICATION IMG ### -->
+        <div class="communication-img">
+          <img src="./assets/img/Communication.jpg" alt="Communication.jpg" class="img-fluid">          
+        </div>
+        <!-- ###: COMMUNICATION IMG -->
+
+        <!-- INFORMATION DESCRIPTION ### -->
+        <div class="information-description">
+          <div class="information-content">
+            <div class="empty-image"></div>
+            <div class="the-first-hand">
+              <img src="./assets/img/Handshake.jpg" alt="HandSkate" class="rounded-circle">
+            </div>
+            <div class="the-second-hand">
+              <img src="./assets/img/Books.png" alt="Books.png" class="rounded-circle">
+            </div>
+            <div class="section-title">
+              <h4 class="title-heading"> Our business </h4>
+            </div>
+            <div class="first-text-content">
+              <h3 class="text-heading"> Education consulting </h3>
+              <div class="text-description">
+                We offer various services as required from different institutions in Vietnam
+              </div>
+            </div>
+            <div class="second-text-content">
+              <h3 class="text-heading"> Business consulting </h3>
+              <div class="text-description"> We provide various services according to requests from foreign companies   and educational institutions.
+              </div>
+            </div>
+          </div>          
+        </div>
+        <!-- ###:  INFORMATION DESCRIPTION -->
+      </div>
+    </section>
+    <!-- ##: SECTION OUR BUSINESS -->
+
+    <!-- SECTION NEWS ## -->
+    <section class="news-list">
+      <div class="container">
+        <!-- NEWS-TEXT ### -->
+        <div class="news-text">
+          <h4 class="news-title"> News </h4>
+          <strong class="news-heading"> Latest News </strong>
+        </div>
+        <!--###: NEWS-TEXT -->
+
+        <!-- NEWS-CARD ### -->
+        <div class="news-card">   
+
+          <div class="card-list">
+            <!-- CARD 1 #### -->
+              <div class="card-company">
+                <div class="card-img">
+                  <img src="./assets/img/News 2.jpg" alt="News 2.jpg" class="card-img-first">
+                </div>
+    
+                <div class="card-company-body">
+                  <h5 class="card-title">
+                    Japanese staff agency company visited to Hanoi <br />
+                  </h5>
+                  <p class="card-text">
+                    <small class="text-muted">
+                      Read more <i class="bi bi-arrow-right"></i>
+                    </small>
+                  </p>
+                </div>
+              </div>
+                
+            <!-- ####: CARD 1  -->
+    
+            <!-- CARD 2 #### -->
+              <div class="card-university">
+                <div class="card-img">
+                  <img src="./assets/img/News 1.jpg" alt="News 1.jpg" class="card-img-second">
+                </div>
+                <div class="card-university-body">
+                  <h5 class="card-title">
+                    Taiwanese university visited to Hanoi
+                  </h5>
+                  <p class="card-text">
+                    <small class="text-muted">
+                      Read more <i class="bi bi-arrow-right"></i>
+                    </small>
+                  </p>
+                </div>
+              </div>
+              
+            <!-- ####: CARD 2  -->
+    
+            <!-- CARD 3 #### -->
+              <div class="card-website">
+                <div class="card-img">
+                  <img src="./assets/img/Class.jpg" alt="Class.jpg" class="card-img-third">
+                </div>
+                <div class="card-website-body">
+                  <h5 class="card-title">
+                    We are pleased to announce the renewal of CREVEA Inc. official website
+                  </h5>
+                  <p class="card-text">
+                    We changed the whole design and format ti create more efficient and superior experience for our
+                    customers once they visit the website. We will continue updating it and providing more useful
+                    information. The website in Japanese will come out soon.
+                  </p>
+                  <p class="card-text">
+                    <small class="text-muted">
+                      Read more <i class="bi bi-arrow-right"></i>
+                    </small>
+                  </p>
+                </div>
+              </div>              
+            <!-- ####: CARD 3  -->
+          </div>
+
+        </div>
+        <!--###  NEWS-CARD  ### -->
+      </div>
+    </section>
+    <!-- ##: SECTION NEWS -->
+
+    <!-- SECTION CONTACT ## -->
     <section class="contacts">
-      <h3 class="contacts-title"> Contacts </h3>
-      <!-- Contacts Form -->
-      <section class="contacts-form">
-        <p><strong>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, nostrum sunt. Neque aliquam aperiam vero repellat nostrum non, quam fugit ipsum earum dolor. Atque odit cumque, amet officia dignissimos sed.
-        </strong></p>
-        <form action="">
-          <div class="form-name">
-            <input type="text" placeholder="Your name">
+      <div class="container">
+        <!-- CONTACTS-TITLE ### -->
+        <div class="contacts-text">
+          <h4 class="contacts-title">
+            Contacts
+          </h4>
+          <p class="contacts-description">            
+            We will connect you with the relevant person in charge. Please click "Send button" after providing your
+            registering input.
+          </p>
+          <div class="row input-group">
+            <div class="input-single">
+              <input type="text" class="form-control name" placeholder="Your name">
+            </div>
+            <div class="input-single">
+              <input type="text" class="form-control" placeholder="Email address" >
+            </div>
+            <div class="input-single">
+              <input type="text" class="form-control phone" placeholder="Phone number" >
+            </div>
           </div>
-          <div class="form-email">
-            <input type="email" name="" id="" placeholder="Email address">
+          <div class="input-big">
+            <textarea type="text" class="form-control" placeholder="Your message" rows="5">
+            </textarea>
           </div>
-          <div class="form-phone">
-            <input type="tel" name="" id="" placeholder="Phone number">
+          <!-- BUTTON ### -->
+          <div class="btn">
+            <button type="button" class="btn-submit">
+              Send Message
+            </button>
           </div>
-          <div class="form-message">
-            <input type="text" placeholder="Your message">
-          </div>
-        </form>
-      </section>
-      <!--End: Contacts Form -->
+          <!--###:  BUTTON -->
+        </div>
+        <!--###: CONTACTS-TITLE -->
 
-      <!-- Map -->
-      <section class="map-section">
-        <img src="./assets/img/Map.png" alt="Map.png" srcset="">
-      </section>
-      <!--End: Map -->
-
+        <!-- IMG-MAP ### -->
+        <div class="contacts-map">
+          <img src="./assets/img/Map.png" alt="Map.png" class="img-fluid">
+        </div>
+        <!--###  IMG-MAP ### -->
+      </div>
     </section>
-    <!--End: Contacts -->
+    <!-- ##: SECTION CONTACT -->
+  </main>
+  <!-- #: MAIN CONTENT -->
 
-  </section>
-  <!-- End: Content -->
+  <!-- FOOTER -->
+  <footer id="footer" class="footer">
+    <!-- INFORMATION ## -->
+    <div class="container-footer">
+      <!-- CREVEA ###-->
+      <div class="container-crevea">
+        <div class="card-crevea">
+          <div class="card-body">
+            <h5 class="card-title"> CREVEA </h5>
+            <p class="card-text ">
+              <strong>Add: </strong>
+              No 45C, 210 alley Hoang Quoc Viet street Cau Giay - Ha Noi - Viet Nam
+            </p>
+            <p class="card-description">
+              <strong>TEL: </strong>
+              (+84)-989-412-665
+            </p>
+            <p class="card-text-sub">
+              <strong>Email: </strong>
+              dalsuke.kawashima@crevea.vn
+            </p>
+          </div>
+        </div>
 
-  <!-- Footer: Information && Copyright-->
-  <footer>
+      </div>
+      <!--###: CREVEA -->
 
+      <!-- CATEGORYS ### -->
+      <div class="container-categorys">
+        <div class="card-categorys">
+          <div class="card-body">
+            <h5 class="card-title"> CATEGORYS </h5>
+            <div class="card-navbar">
+              <a href="#" class="card-link">
+                <i class="bi bi-chevron-right"></i>
+                Home
+              </a>
+              <a href="#" class="card-link">
+                <i class="bi bi-chevron-right"></i>
+                News
+              </a>
+              <a href="#" class="card-link">
+                <i class="bi bi-chevron-right"></i>
+                About us
+              </a>
+              <a href="#" class="card-link">
+                <i class="bi bi-chevron-right"></i>
+                Our business
+              </a>
+              <a href="#" class="card-link">
+                <i class="bi bi-chevron-right"></i>
+                Contact
+              </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <!--###: CATEGORYS -->
+
+      <!-- LANGUAGE ### -->
+      <div class="container-language">
+        <div class="card-language">
+          <div class="card-body">
+            <h5 class="card-title"> LANGUAGE </h5>
+            <div class="card-navbar">
+              <a href="#" class="card-link">
+                <i class="bi bi-chevron-right"></i>
+                English
+              </a>
+              <a href="#" class="card-link">
+                <i class="bi bi-chevron-right"></i>
+                Japanese
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ###: LANGUAGE -->
+
+      <!-- INFO ### -->
+      <div class="container-info">
+        <div class="card-info">
+          <div class="card-body">
+            <h5 class="card-title"> GET OUR NEWS FROM US </h5>
+            <p class="card-text">
+              Please enter the email below to not miss the latest news from us!
+            </p>
+            <div class="input-info position-relative">
+              <input type="text" placeholder="Your email enter"
+                class="input-email">
+              <button class="btn-btn-submit ">
+                Submit
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ###: INFO -->
+    </div>
+    <hr>
+
+    <!-- COPYRIGHT ## -->
+    <div class="container__copyright ">
+      <p class="text-center">
+        &copy; 2018 CREVEA Inc. All rights Reserved.
+      </p>
+    </div>
+    <!-- ##: COPYRIGHT -->
   </footer>
-  <!-- End: Footer -->
+  <!-- #: FOOTER -->
 
-  <!-- </div> -->
-  <!-- End: Main-->
 </body>
-
 </html>
