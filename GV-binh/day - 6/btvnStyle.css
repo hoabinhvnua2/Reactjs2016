@@ -1,0 +1,35 @@
+.container {
+    display: flex;
+    
+}
+
+.left-image {
+    border: 1px solid green;
+    height: 400px;
+    flex: 1 1  auto;
+    position: relative;
+    /* background-image: url('./Education2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; */
+}
+
+.custom-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.right-image {
+    border: 1px solid green;
+    height: 400px;
+    flex: 1 1  auto;
+    /* background-image: url('./Communication.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; */
+}
