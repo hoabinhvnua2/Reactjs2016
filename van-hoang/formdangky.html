@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Layout su dung table</title>
+        <style>
+            table, tr, td {
+                border: 0.5px solid black;
+            }
+        </style>
+    </head>
+    <body>
+        <form>
+            <fieldset>
+                <legend>Đăng ký</legend><br>
+                <label for="fname">Họ: </label>
+                <input type="text" id="fname" name= "fname"><br><br>
+                <label for="flastname">Tên: </label>
+                <input type="text" id="flastname" name= "flastname"><br><br>
+                <label for="fage">Tuổi: </label>
+                <input type="text" id="fage" name= "fage"><br><br>
+                <label for="fcountry">Quê: </label>
+                <input type="text" id="fcountry" name= "fcountry"><br><br>
+                <input type="submit" value="Submit">
+            </fieldset>
+        </form>
+        <table>
+            <tr>
+                <td colspan="4">I have nothing here</td>
+            </tr>
+            <tr>   
+                <td rowspan="3">I have nothing here</td>
+                <td>Same here</td>
+                <td>Same here</td>
+                <td>Same here</td>
+            </tr>
+            <tr>
+                <td>Same here</td>
+                <td>Same here</td>
+                <td>Same here</td>
+            </tr>
+            <tr>
+                <td colspan="3">I have nothing here</td>
+            </tr>
+        </table>
+    </body>
+</html>
