@@ -50,6 +50,14 @@ span {
 .container span:last-child{
     border-right: none;
 } */
+.custom-color-blue {
+    position: sticky;
+    color: chartreuse;
+    margin: 12px 5px;
+    padding: 12px 5px;
+    top: 0;
+    background-color: cornsilk;
+}
 .custom-avata{
     height: 100px;
     width: 100PX;
@@ -92,7 +100,7 @@ span {
     bottom: 12px;
     right: 11px;
 }
-.custom-animation{
+.custom-animation1{
     height: 100px;
     width: 100px;
     background-color: red;
@@ -107,6 +115,9 @@ span {
     position: relative;
     
 }
+.custom-animation:hover{
+    width: 300px;
+}
 @keyframes myAnimation {
     0% {
         
@@ -117,8 +128,8 @@ span {
     25% {
         background-color: green;
         top: 0;
-        left: 500px;
-        transform: rotate(180deg);
+        left: 300px;
+        transform: rotate(45deg);
     }
     50% {
         background-color: aqua;
@@ -126,7 +137,7 @@ span {
         left: 300px;
         height: 300px;
         width: 300px;
-        transform: rotate(180deg);
+        transform: rotate(90deg);
     }
     75% {
         background-color: yellow;
@@ -142,9 +153,6 @@ span {
         background-color: red;
         height: 100px;
         width: 100px;
-        transform: rotate(180deg);
+        transform: rotate(360deg);
     }
-}
-.custom-animation:hover{
-    width: 300px;
 }

@@ -1,0 +1,13 @@
+display: grid
+grid-temple
+gap
+gird-area: dùng để chia layout hoặc dùng để đặt tên cho item  (hàng trc cột sau )
+grid-template-areas: 
+       "header header header"
+       "main . size "
+       "footer footer footer";
+justify-items
+align-items
+place-items: end center;
+place-self: center start;
+place-content: align justify
