@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+
+  <script>
+//     let f1 = () => {
+//       setTimeout(() => {
+//         console.log('three')
+//         return Promise.resolve('three')
+//       }, 3000);
+//     }
+
+//     let f2 = () => {
+//       setTimeout(() => {
+//         console.log('six');
+//         return Promise.resolve('six')
+//       }, 6000);
+//     }
+
+//     const order = async () => {
+//       let x = await f1();
+//       let y = await f2();
+//     }
+
+//     order();
+
+//     function addToList(item, list) {
+//       // console.log('ttt', list.push(item))
+//       return list.push(item)
+//     }
+
+//     const result = addToList('abc', ['react'])
+//     console.log(result)
+
+
+//     function getUp() {
+//   console.log('I am waking up');
+// }
+
+// function makeCoffee() {
+//   setTimeout(() => {
+//     console.log('Making coffee in 5 minutes');
+//   }, 0);
+// }
+
+// function haveBreakfast() {
+//   Promise.resolve().then(() => {
+//       console.log('I have my breakfast');
+//   });
+// }
+
+// makeCoffee();
+// haveBreakfast();
+// getUp();
+
+  let obj = new Object({x: 'A', y: 'B'})
+
+  console.log('type', typeof obj)
+  console.log('obj', obj.x)
+
+  let objt = {}
+  let arr = []
+
+  console.log('objt type', typeof objt)
+  console.log('objt', objt)
+
+  if(arr.length) {
+    console.log('abc')
+  }
+
+  let x = 'a';
+  let y = 'a';
+
+  console.log('x và y', x === y)
+  // x === y => true 
+
+  let c = {
+    x: 'a',
+    y: 'b'
+  } // tướng vs ngăn kéo 3
+
+  let d = {
+    x: 'a',
+    y: 'b'
+  } // tướng ứng vs ngăn kéo 6
+
+  console.log('c và d', c === d)
+  // c === d => false
+
+  //  ví dụ: có bạn A và bạn B chới thân vs nhau, có áo đôi, có đt iphone 12 full option và 2 naày đến phòng tập gym,
+  // tham chiếu và tham trị
+
+  let products = [
+    // {
+    //   id: 1,
+    //   name: 'Iphone 6',
+    //   price: 200
+    // }, 
+    {
+      id: 2,
+      name: 'Iphone 11',
+      price: 800
+    }, 
+    // {
+    //   0: {
+    //     b: 'b'
+    //   }
+    // }
+  ]
+
+  for (const item of products) {
+    console.log('item', item['name'])
+  }
+
+  let product = {
+    id: 2,
+    name: 'Iphone 11',
+    price: 800
+  }
+
+  console.log('old', product)
+
+  product.desc = 'Đây là sản phẩm rât đẹp'
+
+  console.log('new', product)
+
+  delete product.price
+
+  console.log('delete', product)
+
+  // Tạo ra 1 obj, chứa các tên gọi khác nhau
+
+  let zone = 'MN';
+  let alias = zone === 'MB' ? 'dua' : 'thom'
+
+  let objName = {
+    [alias]: 'dứa',
+  }
+  console.log('pbjName', objName)
+
+  // Phương thức xử lý Object
+  // Object.assign()
+  // Object.keys()
+  // Object.values()
+
+  // tìm hiểu thêm: some and every
+
+  console.log('key', Object.keys(product).map(k => product[k]))
+  console.log('key', Object.values(product).map(v => v))
+
+
+  // let user = {
+  //   name: 'React'
+  // }
+
+  // let user1 = user
+
+  // user1.sub = 'Programer'
+
+
+  // console.log('user', user) // => 
+
+    // let user = {
+    //   hocSinh: {
+    //     sayName() {
+    //       let myName = () => console.log('this 1', this)
+    //       myName()
+    //     }
+    //   },
+    //   firstName: 'React',
+    //   sayHi() {
+    //     let ab = () => console.log('this', this)
+    //     ab()
+    //   }
+    // }
+
+    // console.log('user', user)
+    // user.sayHi()
+    // user.hocSinh.sayName()
+
+
+    // Hàm tạo Contructor
+
+    function HocSinh(firstName) {
+      this.userName = firstName;
+      this.sayName();
+    }
+
+    HocSinh.prototype.sayName = function() {
+      console.log('bbbb')
+    }
+
+    function Student(firstName, x, y) {
+      HocSinh.call(this, firstName)
+      this.x = x
+      this.y = y
+    }
+    Student.prototype = Object.create(HocSinh.prototype)
+
+    let student = new Student('HTML', 'CSS', 'JS')
+
+    console.log('student', student)
+
+    // let hocSinh = new HocSinh('HTML')
+    // console.log('hocSinh', hocSinh)
+
+    // let user = {
+    //   name: 'JS'
+    // }
+
+    // user.prototype.sayHi = function() {
+    //   console.log('aaaa')
+    // }
+
+    // convert class
+    // class HocSinh {
+    //   constructor(firstName) {
+    //     this.userName = firstName
+    //     this.sayName(firstName)
+    //   }
+
+    //   sayName(fName) {
+    //     console.log(fName)
+    //   }
+    // }
+
+
+    // let hocSinh = new HocSinh('SCSS')
+
+    // console.log('vvv', hocSinh)
+
+    // class Student extends HocSinh {
+    //   constructor(firstName, x, y) {
+    //     super(firstName)
+    //     this.x = x
+    //     this.y = y
+    //   }
+    // }
+
+    // let stu = new Student('HTML', 'JS', 'CSS')
+
+    // console.log('stu', stu)
+  </script>
+</body>
+</html>

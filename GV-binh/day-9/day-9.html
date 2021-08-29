@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <script>
+    console.log('Xin chào các bạn lớp Reactjs')
+
+    var arr = [1, 2, 3, 4, 5, 6, 7]
+
+    // B1: Tạo ra 1 mảng mới và các phần tử trong mảng mới có giá trị gấp 2 lần các giá trị ở mảng cũ
+    let array = [];
+    let arrLength = arr.length;
+
+    for (let index = 0; index < arrLength; index++) {
+      array.push(arr[index] * 2)
+    }
+    console.log('array', array)
+
+    // map nó chạy qua tất cả các phần tử trong mảng và thực 1 cái action nào đó vx các phần tử của mảng -> tạo ra 1 mảng mới hoàn toàn
+    const arrMap = arr.map((value) => value * 2)
+    console.log('arrMap', arrMap)
+
+    // B2: Tìm ra phần tử lớn hơn 5 và tìm index của phần tử đó
+    // C1 sử dụng for
+    let value;
+    let index;
+      for (let index = 0; index < arrLength; index++) {
+        if (arr[index] > 5) {
+          console.log('Giá trí', arr[index])
+          console.log('Index', index)
+        }
+      }
+
+    // C2: find dùng để tìm kiến kiếm phần tử thoả mãn điều kiện, -> nó trả về 1 giá trị đầu tiên thoả mãn đk
+    const valueCondition = arr.find((value) => value > 5)
+    const indexArr = arr.findIndex((value) => value > 5)
+    console.log('valueCondition', valueCondition)
+    console.log('indexArr', indexArr)
+
+    // B3: Tìm tất cả các phần tử chia hết cho 2 và tập lại thành 1 mảng mới
+
+    let arrChan = [];
+    for (let index = 0; index < arrLength; index++) {
+      if (arr[index] % 2  === 0) {
+        arrChan.push(arr[index])
+      }
+    }
+    console.log('arrChan', arrChan)
+
+    // C2: filter -> nó tìm và trả về 1 mảng các phần tử thoả mãn đk
+    const arrCondChan = arr.filter((value) => value % 2 === 0)
+    console.log('arrCondChan', arrCondChan)
+
+    // Cấu trúc dữ liệu và giải thuật
+    // Các biết bao nhiêu thuật toán sắp xếp?
+
+    var arrayNotSort = [1, 1000, 21, 40, 30]
+
+    // sắp lại mảng từ bé tới lớn
+    function bubbleArr(arrSort) {
+      let arrSortLength = arrSort.length;
+
+      for(let i=0;i<arrSortLength-1;i++){
+        for(let j=i+1;j<arrSortLength;j++){
+            if(arrayNotSort[i] > arrayNotSort[j]){
+                let tam = arrayNotSort[i];
+                arrayNotSort[i] = arrayNotSort[j];
+                arrayNotSort[j] = tam;
+            }
+        }
+      }
+    }
+
+    bubbleArr(arrayNotSort) // [1, 21, 30, 40, 1000]
+    console.log('arrayNotSort', arrayNotSort)
+
+    // sort
+    var arrayNotS = [1, 1000, 21, 40, 30]
+    // console.log(arrayNotS.sort((x, y) => x - y))
+
+    var arrStringSort = ['HTML', 'CSS', 'JAVASCRIPT', 'REACT', 'ANGULAR', 'VUE']
+    // sắp xếp lại mảng theo thứ tựu alphab
+
+    console.log(arrStringSort.sort())
+
+    // B4: include -> dùng để tìm xem trong mảng có phần thoả mãn đk hay ko, giá trị trả vêf của phương thức là true or false
+     const bool = arrayNotS.includes(21, 2)
+     console.log('bool', bool)
+
+    //  B5: tính tổng các giá trị cả mảng
+    var arrayNotS = [1, 2, 3, 4]
+    let sum = 0;
+    for (let index = 0; index < arrayNotS.length; index++) {
+      sum += arrayNotS[index]
+    }
+
+    console.log('sum', sum)
+
+    // reduce =>để tínhs tổng giá trị của mảng
+
+    const sumArr = arrayNotS.reduce((acc, value) => acc += value, 10)
+    console.log(sumArr)
+
+    // 
+    var number = [1, 2, 3 , 4, 5, 6, 7, 8 ,9, 10]
+    //  sử dụng phương thức reduce tạo ra 1 mảng có chứa các phần tử chia hết cho 2
+    const arrNumber = number.reduce((acc, value) => {
+      if (value % 2 === 0) {
+        acc.push(value)
+      }
+
+      return acc;
+    })
+
+    console.log(arrNumber)
+
+    var api = [
+      {
+        id: ,
+        _create: new Date()
+      },
+      {
+
+      }
+    ]
+
+    apiObject = {
+      today: [
+        {
+          id: ,
+        _create: new Date()
+        }
+      ],
+      yesterday: [],
+      
+    }
+   
+  </script>
+</body>
+</html>
