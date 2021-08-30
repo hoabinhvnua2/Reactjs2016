@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bai tap giao dien HTML</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+
+    <!--  NAV -->
+    <nav class="col-xs-12 col-sm-12 col-md-12 col-lg-12 menu">
+        <div class="row">
+            <div class="col-xs-12 col-sm-4 col-md-6 col-lg-6 logo">
+                <strong>
+                    CREVEA Inc.
+                </strong>
+            </div>
+
+            <div class="col-xs-12 col-sm-8 col-md-6 col-lg-6">
+                <div id="toggle-menu">
+                    <a href="javascript:void(0);" onclick="myFunction()"><i class="glyphicon glyphicon-align-justify"></i></a>
+                </div>
+                <div id="main-menu">
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">OUR BUSINESS</a></li>
+                        <li><a href="">ABOUT US</a></li>
+                        <li><a href="">NEWS</a></li>
+                        <li><a href="">CONTACTS</a></li>
+                        <li><a href="" class="sreach"><i class="glyphicon glyphicon-search"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="logo-mobile">
+            <strong>
+                CREVEA Inc.
+            </strong>
+        </div>
+        <div class="sreach-mobile">
+            <a href=""><i class="glyphicon glyphicon-search"></i></a>
+        </div>
+    </nav>
+
+    <!--  BANNER -->
+
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 custom-banner">
+        <div class="row">
+            <div id="carousel-id" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-id" data-slide-to="0" class=""></li>
+                    <li data-target="#carousel-id" data-slide-to="1" class=""></li>
+                    <li data-target="#carousel-id" data-slide-to="2" class="active"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="item">
+                        <img src="image/students.jpg" alt="First slide"
+                            src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5MDAiIGhlaWdodD0iNTAwIj48cmVjdCB3aWR0aD0iOTAwIiBoZWlnaHQ9IjUwMCIgZmlsbD0iIzc3NyI+PC9yZWN0Pjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjQ1MCIgeT0iMjUwIiBzdHlsZT0iZmlsbDojN2E3YTdhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjU2cHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+Rmlyc3Qgc2xpZGU8L3RleHQ+PC9zdmc+">
+
+                    </div>
+                    <div class="item">
+                        <img src="image/students.jpg" alt="Second slide"
+                            src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5MDAiIGhlaWdodD0iNTAwIj48cmVjdCB3aWR0aD0iOTAwIiBoZWlnaHQ9IjUwMCIgZmlsbD0iIzY2NiI+PC9yZWN0Pjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjQ1MCIgeT0iMjUwIiBzdHlsZT0iZmlsbDojNmE2YTZhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjU2cHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+U2Vjb25kIHNsaWRlPC90ZXh0Pjwvc3ZnPg==">
+
+                    </div>
+                    <div class="item active">
+                        <img src="image/students.jpg" alt="Third slide"
+                            src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5MDAiIGhlaWdodD0iNTAwIj48cmVjdCB3aWR0aD0iOTAwIiBoZWlnaHQ9IjUwMCIgZmlsbD0iIzU1NSI+PC9yZWN0Pjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjQ1MCIgeT0iMjUwIiBzdHlsZT0iZmlsbDojNWE1YTVhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjU2cHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+VGhpcmQgc2xpZGU8L3RleHQ+PC9zdmc+">
+                    </div>
+                </div>
+                <a class="left carousel-control" href="#carousel-id" data-slide="prev"><span
+                        class="glyphicon glyphicon-chevron-left"></span></a>
+                <a class="right carousel-control" href="#carousel-id" data-slide="next"><span
+                        class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
+        </div>
+    </div>
+
+
+    <!--  ABOUT US -->
+
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <div class="row">
+
+            <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                <div class="row">
+
+                </div>
+            </div>
+
+            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 content-about-us">
+                <div class="row">
+
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 content-about-us-left">
+                        <div class="title">
+                            <div class="title-gach-ngang">
+
+                            </div>
+                            <div class="title-content">
+                                About Us
+                            </div>
+                        </div>
+                        <strong>
+                            Our goal is "to support and connect educational institution, conpanies across the word by
+                            providing highly qualified/skilled human resource for mutual development and consulting
+                            services in job and skill training".Achieving this,we hope to contribute to the betterment
+                            of society.
+                        </strong>
+                        <p>
+                            Our staff are highly experienced and senior members of diverse backgrounds in educational
+                            institutions and companies in VietNam and orther territories across the globe. we could
+                            provide superior services to our customer.
+                        </p>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 content-about-us-right">
+
+                        <img src="image/Business.JPG" class="img-responsive" alt="Image">
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                <div class="row">
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!--  BUSINESS -->
+
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 content-our-business">
+        <div class="row">
+
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 content-our-business-main">
+                <div class="row">
+                    <img src="image/Education2.jpg" class="img-responsive" alt="Image">
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 content-our-business-main">
+                <div class="row">
+                    <img src="image/Communication.jpg" class="img-responsive" alt="Image">
+                </div>
+            </div>
+            <div class="content-our-business-position">
+                <div class="content-our-business-position-son">
+                    <img src="image/Handshake.jpg" class="img-responsive" alt="Image">
+                    <div class="content-our-business-position-son-1">
+                        <h4>Education consulting</h4>
+                        <p>
+                            We offer various services as required from different educational institutions VietNam
+                        </p>
+                    </div>
+                </div>
+                <div class="content-our-business-position-son2">
+                    <img src="image/Books.png" class="img-responsive" alt="Image">
+                    <div class="content-our-business-position-son2-1">
+                        <h4> Business consulting</h4>
+                        <p>
+                            We provide various services accordling to requests from foreign companies and educational
+                            institutions
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--  NEWS -->
+
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 content-news">
+        <div class="row">
+
+            <div class="col-xs-0 col-sm-2 col-md-2 col-lg-2">
+                <div class="row">
+
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+                <div class="row">
+
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <div class="title">
+                            <div class="title-gach-ngang">
+
+                            </div>
+                            <div class="title-content">
+                                News
+                            </div>
+                        </div>
+                        <h3>
+                            Latest News
+                        </h3>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 content-latest-news">
+
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                <img src="image/News 2.jpg" class="img-responsive" alt="Image">
+                                <strong>
+                                    Japanese staff agency company visited to HaNoi
+                                </strong>
+                                <br>
+                                <a href="#">Read more <i class="glyphicon glyphicon-arrow-right"></i></a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 content-latest-news">
+
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                <img src="image/News 1.jpg" class="img-responsive" alt="Image">
+                                <strong>
+                                    Taiwanese university visited to HaNoi
+                                </strong>
+                                <br>
+                                <a href="#">Read more <i class="glyphicon glyphicon-arrow-right"></i></a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 content-latest-news">
+
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                <img src="image/Class.jpg" class="img-responsive" alt="Image">
+                                <strong>
+                                    We are pleased to announce the renewal of CREVEA Inc. Offical website.
+                                </strong>
+                                <p>
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae nulla iure maxime?
+                                    Dolore
+                                    aperiam vero voluptas exercitationem nemo animi quisquam unde eligendi aut.
+                                    Provident
+                                    voluptates quod, fugit ipsa dolorem sed.
+                                </p>
+                                <a href="#">Read more <i class="glyphicon glyphicon-arrow-right"></i></a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-xs-0 col-sm-2 col-md-2 col-lg-2">
+                <div class="row">
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!--  CONTACTS -->
+
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 contacts">
+        <div class="row">
+
+            <div class="col-xs-0 col-sm-2 col-md-2 col-lg-2">
+
+            </div>
+
+            <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                    <div class="row contacts-left">
+                        <div class="title">
+                            <div class="title-gach-ngang">
+
+                            </div>
+                            <div class="title-content">
+                                Contacts
+                            </div>
+                        </div>
+                        <h4>
+                            We will connect you with the relevant person in charge. Please click "Send button" after
+                            providing your registering input.
+                        </h4>
+                        <div class="row">
+
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                                <input type="text" name="" id="input" class="form-control" value="" required="required"
+                                    pattern="" title="" placeholder="Your name">
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                                <input type="email" name="" id="input" class="form-control" value="" required="required"
+                                    pattern="" title="" placeholder="Email address">
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                                <input type="text" name="" id="input" class="form-control" value="" required="required"
+                                    pattern="" title="" placeholder="Phone number">
+                            </div>
+
+
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+                                <textarea name="" id="input" class="form-control" rows="5" required="required"
+                                    placeholder="Your message"></textarea>
+
+                            </div>
+
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 contacts-button">
+
+                                <button type="submit" class="btn btn-default">Send Message</button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                    <div class="row  contacts-right">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3729.2647241521563!2d106.55391581440385!3d20.821014000214895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1svi!2s!4v1627020361471!5m2!1svi!2s"
+                            width="100%" style="border:0;" allowfullscreen="" loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-xs-0 col-sm-2 col-md-2 col-lg-2">
+
+            </div>
+
+        </div>
+    </div>
+
+    <!--  FOOOTER -->
+
+    <footer class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <div class="row">
+
+            <div class="col-xs-0 col-sm-2 col-md-2 col-lg-2">
+
+            </div>
+
+            <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 top-footer">
+                <div class="row">
+
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3">
+                        <h4>
+                            Crevea
+                        </h4>
+                        <ul>
+                            <li>
+                                Add : No 45C,210 alley Hoang Quoc Viet street Cau Giay-Ha Noi-Viet Nam
+                            </li>
+                            <li>
+                                TEL : (+84)-989-412-665
+                            </li>
+                            <li>
+                                Email:daisuke.kawashima@crevea.vn
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3">
+                        <h4>
+                            Category
+                        </h4>
+                        <ul>
+                            <li><a href=""><i class="glyphicon glyphicon-menu-right"></i> Home</a></li>
+                            <li><a href=""><i class="glyphicon glyphicon-menu-right"></i> News</a></li>
+                            <li><a href=""><i class="glyphicon glyphicon-menu-right"></i> About us</a></li>
+                            <li><a href=""><i class="glyphicon glyphicon-menu-right"></i> Our Business</a></li>
+                            <li><a href=""><i class="glyphicon glyphicon-menu-right"></i> Contacts</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3">
+                        <h4>
+                            Language
+                        </h4>
+                        <ul>
+                            <li><a href=""><i class="glyphicon glyphicon-menu-right"></i> English</a></li>
+                            <li><a href=""><i class="glyphicon glyphicon-menu-right"></i> Japanese</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3">
+                        <h4>
+                            Get our news from us
+                        </h4>
+                        <p>
+                            Please enter the email below to not miss the latest news from us!
+                        </p>
+                        <div class="footer-contact-email">
+                            <input type="email" name="" id="input" class="form-control" value="" required="required"
+                            title="" placeholder="Your email enter">
+                            
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                            
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-xs-0 col-sm-2 col-md-2 col-lg-2">
+
+            </div>
+
+
+        </div>
+
+        <div class="row">
+
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 align-footer">
+
+            </div>
+
+        </div>
+
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 latest-footer">
+            <h5>
+                @2018 CREVEA Inc.All rights Reserved.
+            </h5>
+        </div>
+
+
+    </footer>
+    
+
+    <script>
+        function myFunction() {
+          var x = document.getElementById("main-menu");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+    </script>
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Bootstrap JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+</body>
+
+</html>

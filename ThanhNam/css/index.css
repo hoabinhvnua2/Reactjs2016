@@ -2,20 +2,390 @@
     margin: 0px;
     padding: 0px;
 }
-body{
-    background-color: rgb(233, 240, 231);
+
+.title{
+    display: flex;
 }
-.div0{
-    background-color: darkcyan;
-    height: 70px;
+.title .title-gach-ngang{
+    height: 2px;
+    width: 30px;
+    background-color: blue;
+    margin-top: 9px;
+    margin-right: 5px;
 }
-@media only screen and (max-width : 768px){
-    .lala1 {
-        padding: 15px;
-    }
-    .lala2{
-        padding-left: 15px !important;
-    }
+/* 
+    Nav
+*/
+
+
+.menu {
+    background-color: blue;
+    z-index: 1;
+    position: relative;
+}
+/* 
+    Logo CREVEA
+*/
+.menu .logo{
+    padding: 21px 0;
+    text-align: center;
+}
+.menu .logo strong{
+    color: #fff;
+    font-size: 20px;
+}
+/* 
+    NAV Menu
+*/
+.menu ul{
+    margin: 0;
+    padding: 0;
+}
+.menu ul li{
+    display: inline-block;
+    list-style: none;
+}
+.menu ul li a{
+    padding: 25px 8px;
+    display: block;
+    text-decoration: none;
+    color: #ccc;
+    text-align: center;
+    font-weight: 600;
+    font-family: system-ui;
+}
+
+.menu ul li a:hover{
+    color: orange;
+    transition: 0.5s;
+    text-decoration: none;
+}
+.menu #toggle-menu{
+    text-align: left;
+    padding: 10px;
+    font-size: 25px;
+    display: none;
+}
+.menu #toggle-menu a{
+    color: #ccc;
+}
+/* 
+    Mobile display
+*/
+.menu .sreach-mobile{
+    display: none;
+}
+.menu .logo-mobile{
+    display: none;
+}
+
+/* 
+    Banner
+*/
+
+.custom-banner{
+    
+}
+
+/* 
+    Content About Us
+*/
+
+.content-about-us{
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.content-about-us .content-about-us-left strong{
+    font-size: 17px;
+    font-family: system-ui;
+}
+.content-about-us .content-about-us-left p{
+    margin-top: 15px;
+    font-weight: 300;
+    font-size: 12px;
+}
+
+/* 
+    Content Our Business
+*/
+.content-our-business{
+    position: relative;
+}
+.content-our-business-position-son{
+    position: absolute;
+    top: 25%;
+    left: 48.5%;
+    display: flex;
+}
+.content-our-business-position-son img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-top: 12px;
+}
+.content-our-business-position-son-1{
+    margin-left: 20px;
+}
+.content-our-business-position-son-1 h4{
+    color: #ffffff;
+    font-family: cursive;
+}
+.content-our-business-position-son-1 p{
+    color: #ffffff;
+    font-size: 11px;
+}
+
+.content-our-business-position-son2{
+    position: absolute;
+    top: 39%;
+    left: 48.5%;
+    display: flex;
+}
+.content-our-business-position-son2 img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-top: 12px;
+}
+.content-our-business-position-son2-1{
+    margin-left: 20px;
+}
+.content-our-business-position-son2-1 h4{
+    color: #ffffff;
+    font-family: cursive;
+}
+.content-our-business-position-son2-1 p{
+    color: #ffffff;
+    font-size: 11px;
+}
+
+/* 
+    Content News
+*/
+
+.content-news{
+    margin-top: 35px;
+}
+.content-news h3{
+    margin-top: 5px;
+    font-weight: bold;
+    font-family: system-ui;
+}
+
+.content-news .content-latest-news .panel-body {
+    padding: 0px;
+}
+.content-news .content-latest-news strong {
+    font-size: 16px;
+    font-family: system-ui;
+    display: block;
+    padding: 10px;
+}
+.content-news .content-latest-news p{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.content-news .content-latest-news a{
+    text-decoration: none;
+    padding-left: 10px;
+    color: black;
+}
+
+/* 
+    Contacts
+*/
+
+.contacts{
+    margin-top: 50px;
+}
+.contacts-left{
+    padding-right: 10px;
+}
+.contacts .contacts-left h4{
+    font-weight: 700;
+}
+.contacts .contacts-left textarea{
+    margin-top: 20px;
+}
+.contacts-right{
+    padding-left: 10px;
+}
+.contacts-button{
+    text-align: center;
+    margin-top: 10px;
+}
+.contacts-button button{
+    background-color: orange;
+    padding: 10px 15px;
+    color: #ffffff;
+}
+
+/* 
+    Footer
+*/
+
+footer{
+    margin-top: 50px;
+    background-color: black;
+}
+footer h4{
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-top: 20px;
+
+}
+footer p{
+    color: #ffffff;
+    font-size: 12px;
+}
+footer ul {
+
+}
+footer ul li{
+    list-style: none;
+    margin-top: 10px;
+    font-size: 12px;
+    color: #ffffff;
+}
+footer ul li a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 12px;
+}
+footer .top-footer input{
+    background-color: black;
+    border: none;
+    border-bottom: 1px solid #fff;
+}
+footer .top-footer .form-control{
+    font-size: 12px;
+}
+footer .align-footer{
+    height: 1px;
+    background-color: #ffffff;
+    
+}
+footer .latest-footer{
+    text-align: center;
+}
+footer .latest-footer h5{
+    color: #ffffff;
+}
+.footer-contact-email{
+    display: flex;
+    position: relative;
+}
+.footer-contact-email button{
+    position: absolute;
+    right: 1px;
+    top: 5%;
+    background-color: #fff;
+    border-radius: 0;
+}
+.footer-contact-email .btn{
+    font-size: 12px;
+    padding: 4px;
+    color: black;
 }
 
 
+/* 
+    Reponsive Mobile
+*/
+@media only screen and (min-width: 1025px) {
+    .contacts input{
+        margin-top: 15px;
+    }
+    .top-footer input {
+        margin-bottom: 10px;
+    }
+}
+@media only screen and (max-width: 1024px) {
+    .contacts-button{
+        margin-bottom: 15px;
+    }
+    .contacts input{
+        margin-top: 15px;
+    }
+    .content-our-business-main img{
+        width: 100%;
+    }
+    .content-our-business-position-son{
+        top: 75%;
+        left: 5%;
+    }
+    .content-our-business-position-son2{
+        top: 82%;
+        left: 5%;
+    }
+    .top-footer input {
+        margin-bottom: 10px;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .menu{
+        background-color: #ffffff !important;
+    }
+    .menu .logo {
+        display: none;
+    }
+    .menu .logo-mobile{
+        display: block;
+        position: absolute;
+        top: 12px;
+        right: 30%;
+    }
+    .menu .logo-mobile strong{
+        font-size: 20px;
+        font-family: inherit;
+        color: blue;
+    }
+    #main-menu{
+        display: none;        
+    }
+    #main-menu ul{
+        display: grid;
+        float: left;
+    }
+    #main-menu ul li a{
+        text-align: left;
+        padding: 10px 10px;
+    } 
+    #main-menu ul li .sreach i{
+        display: none;
+    }
+    .menu .sreach-mobile{
+        display: block;
+        position: absolute;
+        top: 15px ;
+        right: 20px ;
+    }
+    .menu .sreach-mobile a{
+        font-size: 25px;
+        color: black;
+    }
+    #toggle-menu{
+        display: block !important;
+    }
+    #toggle-menu i{
+        color: black;
+    }
+    .content-our-business-position-son{
+        top: 70%;
+        left: 5%;
+    }
+    .content-our-business-position-son2{
+        top: 80%;
+        left: 5%;
+    }
+    .contacts input{
+        margin-top: 15px;
+    }
+    .contacts-right{
+        padding-left: 0px;
+    }
+    .top-footer input {
+        margin-bottom: 10px;
+    }
+}
