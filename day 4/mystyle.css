@@ -1,0 +1,80 @@
+.custom-color-pink{
+    color: hotpink;
+    margin: 10px 5px 2px;
+}
+#colorgreen{
+    color: green;
+}
+.container span:last-child{
+    color: blue;
+}
+.container span:first-child{
+    color: chartreuse;
+}
+.custom-submid:hover{
+    color: aqua;
+    background-color: brown;
+}
+/* p2 */
+span{
+    color: yellow;
+}
+.custom-position{
+    height: 300px;
+    width: 500px;
+    background-color: blue;
+}
+.custom-animation{
+    height: 100px;
+    width: 100px;
+    background-color: yellow;
+    transition: all 3s;
+    animation-name: myAnimation;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction:alternate ;
+    position: relative;
+}
+@keyframes myAnimation {
+    0%{
+
+top: 0;
+left: 0;
+    }
+    25%{
+        background-color: green;
+        top: 0;
+        left: 500px;
+
+    }
+    50%{
+        background-color: aqua;
+        top: 500px;
+        left: 500px;
+        height: 300px;
+        width: 300px;
+        transform: rotate(45deg);
+        
+    }
+    75%{
+        background-color: red;
+        top: 300px;
+        left: 0px;
+        height: 300px;
+        width: 300px;
+        transform: rotate(90deg);
+    }
+    100%{
+        top: 0;
+        left: 0;
+        height: 200px;
+        width: 200px;
+        background-color: yellow;
+        transform: rotate(180deg);
+    }
+}
+.custom-animation:hover{
+    width: 300px;
+}
