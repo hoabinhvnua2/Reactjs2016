@@ -1,0 +1,544 @@
+ /* ---- Desktop > 1200px ---- */
+@media (min-width:75.0625em) {}
+
+/*  # : ---- Desktop > 1200px ---- */
+
+
+/* ---- Desktop <=1200px IPAD PRO ---- */
+@media (max-width: 75em) and (min-width:62em) {
+  .our-business .education-img .img-fluid {
+    min-width: -webkit-fill-available;
+    max-height: 312px;
+  }
+
+  .header .nav {
+    display: grid;
+    grid-template-columns: 1.25fr 1.25fr 0.5fr;
+  }
+
+  .header .nav .menu .menu-items a {
+    padding: 16px 4px;
+  }
+
+  .our-business .education-img .img-fluid {
+    min-width: -webkit-fill-available;
+    max-height: 312px;
+  }
+
+  .card-list {
+    display: grid;
+    grid-template-columns: repeat(3, 33.33333%);
+    grid-template-rows: auto auto;
+  }
+
+  .card-img-first,
+  .card-img-second {
+    max-width: 100%;
+  }
+
+  .card-img-third {
+    max-width: 100%;
+    min-height: 166px;
+  }
+
+  .contacts .container {
+    display: grid;
+    grid-template-columns: 10% 40% 40% 10%;
+  }
+
+  .input-group {
+    display: flex;
+    padding: 24px 0;
+    flex-direction: column;
+    /* Add flex-direction: column */
+  }
+
+  .input-single .name {
+    margin-left: 0px;
+  }
+
+  .form-control {
+    height: 40px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 12px;
+    width: 100%;
+    /* Add w-100 */
+  }
+
+  .btn {
+    display: flex;
+    justify-content: center;
+    margin-right: 0px;
+  }
+}
+
+/* #: ---- Desktop <=1200px IPAD PRO ----  */
+
+/* ----Tablet ---- */
+@media (max-width: 61.9375em) and (min-width:48em) {
+
+  /* 991px */
+  .header .nav {
+    display: grid;
+    grid-template-columns: 0.5fr 1.25fr 0.25fr;
+  }
+
+  .header .nav .menu .menu-items a {
+    padding: 16px 10px;
+  }
+
+  .about-us .container {
+    display: grid;
+    grid-template-columns: 0.25fr 1.25fr 1.25fr 0.25fr;
+  }
+
+  .about-us .about-text {
+    grid-column: 2/3;
+  }
+
+  .about-us .about-img {
+    grid-column: 3/4;
+  }
+
+  .our-business .container {
+    display: grid;
+    grid-template-columns: 3fr;
+    grid-template-rows: 1.5fr 1.5fr;
+    margin-top: 60px;
+  }
+
+  .our-business .education-img {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
+  .our-business .communication-img {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    margin-top: -4px;
+  }
+
+  .our-business .information-content {
+    margin-left: 0px;
+  }
+
+  .our-business .information-description {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+
+  .our-business .communication-img .img-fluid {
+    max-height: 236px;
+    min-width: -webkit-fill-available;
+  }
+
+  .information-content .the-first-hand .rounded-circle {
+    margin-left: 20px;
+  }
+
+  .information-content .the-second-hand .rounded-circle {
+    margin-left: 20px;
+  }
+
+  .news-list .container {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: 0.0625fr 1.875fr 0.0625fr;
+  }
+
+  .news-card {
+    grid-column-start: 2;
+    grid-row-start: 2;
+  }
+
+  .card-list {
+    display: grid;
+    grid-template-columns: repeat(3, 33.33333%);
+    /* grid-template-rows: auto auto; */
+  }
+
+  .card-company {
+    border: 1px ridge #999;
+    margin: 0px;
+    display: grid;
+    /* grid-template-rows: auto auto; */
+    max-height: 348px;
+    margin-right: 4px;
+  }
+
+  .card-img {
+    max-width: 244px;
+  }
+
+  .card-img-first,
+  .card-img-second {
+    /* max-height: 180px; */
+    /* min-width: auto; */
+    max-width: 100%;
+  }
+
+  .card-company-body {
+    margin-top: 20px;
+    padding: 0 12px;
+  }
+
+  .card-company-body .text-muted,
+  .card-university-body .text-muted {
+    font-weight: 400;
+  }
+
+  .card-title {
+    font-size: 20px;
+    margin: 0 0 16px;
+  }
+
+  .card-university {
+    border: 1px solid #999;
+    margin: 0px;
+    display: grid;
+    /* grid-template-rows: auto auto; */
+    max-height: 348px;
+    margin-right: 8px;
+  }
+
+  .card-img-second {
+    max-height: 180px;
+    min-width: -webkit-fill-available;
+  }
+
+  .card-university-body {
+    margin-top: 20px;
+    padding: 0 12px;
+  }
+
+  .card-university-body .text-muted {
+    font-weight: 400;
+  }
+
+  .card-website {
+    border: 1px solid #999;
+    margin: 0px;
+    display: grid;
+    grid-template-rows: auto auto;
+  }
+
+  .card-img-third {
+    min-height: 180px;
+    min-width: auto;
+  }
+
+  .card-website-body {
+    margin-top: 20px;
+    padding: 0 12px;
+  }
+
+  .card-website-body .card-text {
+    margin-top: 20px;
+    margin-bottom: 8px;
+    font-weight: 400;
+  }
+
+  .contacts {
+    margin-top: 60px;
+  }
+
+  .contacts .container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+
+  .contacts-text {
+    grid-column-start: 1;
+    padding: 0px 20px;
+  }
+
+  .contacts-map {
+    margin-right: 20px;
+  }
+
+  .input-group {
+    display: flex;
+    flex-direction: column;
+    padding: 24px 0;
+  }
+
+  .input-single {
+    margin: 12px 0;
+  }
+
+  .input-single .name {
+    margin-left: 0;
+  }
+
+  .input-single .phone {
+    margin-right: 0;
+  }
+
+  .form-control {
+    width: 100%;
+  }
+
+  .btn {
+    justify-content: center;
+    margin-right: 0px;
+  }
+
+  .container-footer {
+    display: grid;
+    grid-template-columns: auto;
+    margin: 20px 40px;
+  }
+
+  .container-crevea {
+    grid-column-start: 1;
+    margin-bottom: 20px;
+  }
+
+  .container-categorys,
+  .container-language {
+    margin-bottom: 20px;
+  }
+}
+
+/* #: ----Tablet ---- */
+
+/* ----MOBILE ---- */
+@media (max-width: 47.9375em) {
+  .header {
+    background: #fff;
+  }
+
+  .header .nav {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .nav__bars-btn {
+    display: block;
+    margin: auto;
+    color: gray;
+  }
+
+  .header .nav .logo {
+    padding: 16px 12px;
+  }
+
+  .header .nav .logo a {
+    color: #0d6efd;
+    font-weight: bold;
+  }
+
+  .header .nav .menu {
+    display: none;
+  }
+
+  .header .nav .search {
+    margin: auto;
+  }
+
+  .header .nav .search {
+    color: #000;
+  }
+
+  .about-us .container {
+    display: grid;
+    grid-template-columns: 0.175fr 2.75fr 0.175fr;
+    grid-template-rows: auto auto;
+  }
+
+  .about-us .about-text {
+    grid-column: 2/3;
+  }
+
+  .about-us .about-img {
+    grid-column: 2/3;
+    margin-top: 20px;
+  }
+
+  .our-business .container {
+    display: grid;
+    grid-template-columns: 0.175fr 2.75fr 0.175fr;
+    grid-template-rows: auto auto;
+  }
+
+  .our-business .education-img {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+
+  .our-business .education-img .img-fluid {
+    max-width: 100%;
+    max-height: 176px;
+  }
+
+  .our-business .communication-img {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+
+  .our-business .information-description {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+
+  .our-business .information-content {
+    margin-top: 40px;
+  }
+
+  .our-business .communication-img .img-fluid {
+    max-width: 100%;
+    min-height: 400px;
+    min-width: -webkit-fill-available;
+  }
+
+  .information-content .the-first-hand .rounded-circle,
+  .information-content .the-second-hand .rounded-circle {
+    margin-left: 48px;
+    padding-top: 60px;
+  }
+
+  .information-content .section-title .title-heading {
+    font-weight: 100;
+  }
+
+  .information-content .first-text-content .text-heading {
+    margin-bottom: 8px;
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .information-content .first-text-content .text-description {
+    text-align: center;
+  }
+
+  .information-content .second-text-content .text-heading {
+    margin-bottom: 8px;
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .information-content .second-text-content .text-description {
+    text-align: center;
+  }
+
+  .news-text {
+    border: 1px solid white;
+  }
+
+  .news-heading {
+    font-size: 24px;
+  }
+
+  .news-card {
+    border: 1px solid white;
+  }
+
+  .card-list {
+    display: grid;
+    grid-template-columns: revert;
+    grid-template-rows: auto auto;
+    justify-content: center;
+  }
+
+  .news-list .container {
+    border: 1px solid white;
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: 0.25fr 1.75fr 0.25fr;
+    justify-content: center;
+  }
+
+  .card-company {
+    /* border: 1px solid #999; */
+    margin: 20px;
+    display: grid;
+    grid-template-rows: 0.175fr 0.175fr;
+    max-height: fit-content;
+  }
+
+  .card-university {
+    border: 1px solid #999;
+    /* margin: 20px; */
+    display: grid;
+    grid-template-rows: 0.175fr 0.175fr;
+    max-height: 348px;
+  }
+
+  .card-company,
+  .card-university,
+  .card-website {
+    margin: 24px 0;
+  }
+
+  .card-text {
+    margin: 0 0 24px;
+  }
+
+  .contacts .container {
+    display: grid;
+    grid-template-columns: auto;
+  }
+
+  .contacts-text {
+    grid-column-start: 1;
+    padding: 0px 20px;
+  }
+
+  .input-group {
+    display: flex;
+    flex-direction: column;
+    padding: 24px 0;
+  }
+
+  .input-single {
+    margin: 12px 0;
+    width: 100%;
+  }
+
+  .input-single .name {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .input-single {
+    margin: 12px 0;
+    width: 100%;
+  }
+
+  .form-control {
+    height: 40px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 12px;
+    width: 100%;
+  }
+
+  .btn {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+  }
+
+  .contacts-map {
+    margin: 20px;
+  }
+
+  .container-footer {
+    display: grid;
+    grid-template-columns: auto;
+    margin: 20px 40px;
+  }
+
+  .container-crevea {
+    grid-column-start: 1;
+    margin-bottom: 20px;
+  }
+
+  .container-categorys,
+  .container-language {
+    margin-bottom: 20px;
+  }
+}
+
+/* #:  ----MOBILE ---- */
