@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+  <input type="text" id="userName">
+  <br>
+  <br>
+  <button onclick="getValue()">Add new</button>
+  <!-- <button id="hi" >Hello</button> -->
+
+  <br>
+  <br>
+  <table border="1">
+    <thead>
+      <tr>
+        <th>STT</th>
+        <th>User name</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+
+    <tbody id="result">
+    </tbody>
+  </table>
+
+
+  <script>
+
+    let users = [
+      {
+        id: 1,
+        userName: 'React'
+      },
+      {
+        id: 2,
+        userName: 'HTMl'
+      },
+      {
+        id: 3,
+        userName: 'CSS'
+      }
+    ];
+
+    const result = document.getElementById('result')
+
+    function deleteUser(id) {
+      const newArr = users.filter(u => u.id !== id)
+      users = newArr
+
+      showList(users)
+    }
+
+    function showList(arr) {
+      let html = '';
+      for (let index = 0; index < arr.length; index++) {
+        html += `<tr>
+              <td>${index + 1}</td>
+              <td>${arr[index].userName}</td>
+              <td><span onclick="deleteUser(${arr[index].id})">Xoá</span></td>
+            </tr>`
+      }
+      result.innerHTML = html
+    }
+
+    showList(users)
+    
+    function getValue() {
+      let html = '';
+      const userName = document.getElementById('userName').value;
+      users.push({id: 3, userName})
+      if(userName.length) {
+        let html = '';
+      for (let index = 0; index < users.length; index++) {
+        html += `<tr>
+              <td>${index + 1}</td>
+              <td>${users[index].userName}</td>
+            </tr>`
+      }
+      result.innerHTML = html
+        return true
+      }
+      alert('Bạn chưa nhập user name')
+    }
+
+
+ 
+
+    // Promise
+
+    // new Promise((resole, reject) => {
+    //   resole(5)
+    // })
+    // .then(x => x * 2)
+    // .then(y => y + 2)
+    // .catch(err => console.log(err))
+    // .finally(() => //@TODO hidden spin 
+    // {
+
+    // })
+
+    // async await
+    const tinhToan = async () => {
+      // const result1 = await Promise.resolve(5)
+      // const result2 = result1 * 2
+      // const result3 = result2 + 2
+
+      // return result3
+      try {
+        const result1 = await Promise.resolve(5)
+        const result2 = result1 * 2
+        const result3 = result2 + 2
+      } catch (error) {
+        console.log(error)
+      }
+    }
+
+    console.log(tinhToan())
+  </script>
+</body>
+</html>
