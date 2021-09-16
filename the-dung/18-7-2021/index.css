@@ -1,0 +1,158 @@
+/* p{
+    color:green;
+}
+p span{
+    color: hotpink;
+}
+section span{
+    color: green;
+}
+span~section span{
+    color: indigo;
+} */
+/* .custom-color-red{
+    color:hotpink;
+}
+#colorBlue{
+    color: blue;
+}
+.custom-hover:hover{
+    color:green ;
+}
+.background-custom-focus:focus{
+    background-color: green;
+}
+.container span:last-child{
+    color: red;
+}
+.container span:first-child{
+    color:blue;
+}
+.container span:nth-child(4){
+    color:green;
+}
+.container span:nth-child(2n){
+    color:yellow;
+} */
+/* #colorRed{
+    color: green;
+}
+.custom-color-blue{
+    color: blue;
+}
+span {
+    color: red;
+} */
+/* .container span{
+    border-right: 1px solid black;
+    padding: 10px 15px;
+}
+.container span:last-child{
+    border-right: none;
+} */
+.custom-color-blue {
+    position: sticky;
+    color: chartreuse;
+    margin: 12px 5px;
+    padding: 12px 5px;
+    top: 0;
+    background-color: cornsilk;
+}
+.custom-avata{
+    height: 100px;
+    width: 100PX;
+    background-image: url(./dog.jpg);
+    border: 1px solid blue;
+    border-radius: 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.custom-position{
+    height: 300px;
+    width: 300px;
+    background-color: blue;
+    position: relative;
+}
+.item-1{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+}
+.item-2{
+    height: 150px;
+    width: 150px;
+    background-color:yellow;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+.customFixed{
+    height: 50px;
+    width: 50px;
+    background-color: aqua;
+    position: fixed;
+    bottom: 12px;
+    right: 11px;
+}
+.custom-animation1{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    transition: all 3s;
+    animation-name: myAnimation;
+    animation-duration: 8s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: running;
+    position: relative;
+    
+}
+.custom-animation:hover{
+    width: 300px;
+}
+@keyframes myAnimation {
+    0% {
+        
+        top: 0;
+        left: 0;
+        
+    }
+    25% {
+        background-color: green;
+        top: 0;
+        left: 300px;
+        transform: rotate(45deg);
+    }
+    50% {
+        background-color: aqua;
+        top: 300px;
+        left: 300px;
+        height: 300px;
+        width: 300px;
+        transform: rotate(90deg);
+    }
+    75% {
+        background-color: yellow;
+        top: 300px;
+        left: 0;
+        height: 300px;
+        width: 300px;
+        transform: rotate(180deg);
+    }
+    100% {
+        top: 0;
+        left: 0;
+        background-color: red;
+        height: 100px;
+        width: 100px;
+        transform: rotate(360deg);
+    }
+}

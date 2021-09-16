@@ -23,8 +23,8 @@ function minFunct(){
 }
 minFunct() */
 
-/*
-Bai4:
+
+//Bai4:
 var a = parseInt(prompt("Nhập số a"));
 var b = parseInt(prompt("Nhập số b"));
 var phepTinh = parseInt(prompt("Nhap phepTinh"));
@@ -63,7 +63,7 @@ function tinhToan() {
 }
 tinhToan()
 
-*/
+
 
 /*
 //Bai 5:

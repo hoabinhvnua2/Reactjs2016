@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 4</title>
+</head>
+
+<body>
+    <script>
+        var x = prompt('Nhập vào số thứ nhất');
+        var y = prompt('Nhập vào số thứ hai');
+        var phepTinh = prompt('Nhập vào phép tính')
+
+        function tinhToan(soThuNhat, soThuHai, phepTinh) {
+            switch (phepTinh) {
+                case '+':
+                    return soThuNhat + +soThuHai;
+                case '-':
+                    return soThuNhat - soThuHai;
+                case '*':
+                    return soThuNhat * soThuHai;
+                case '/':
+                    return (soThuHai == 0) ? alert("so thu 2 phai khac 0") : soThuNhat / soThuHai;
+                default:
+                    alert('Lỗi');
+            }
+
+        }
+        console.log(tinhToan(x, y, phepTinh))
+    </script>
+</body>
+
+</html>

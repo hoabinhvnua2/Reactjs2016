@@ -1,0 +1,295 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* ==MENU== */
+header {
+    background-color: #0072d3;
+    display: flex;
+    height: 80px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 300px;
+}
+
+.logo a {
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.nav-menu {
+    display: inline-flex;
+    color: #acc9cc;
+    font-weight: bold;
+}
+
+.list-menu {
+    margin: 0;
+    padding-right: 20px;
+}
+
+.list-item {
+    list-style: none;
+    display: inline-block;
+    padding-left: 20px;
+}
+
+.list-item a {
+    color: #acc9cc;
+}
+
+.slide {
+    width: 100%;
+}
+
+/* ==CONTENT== */
+
+/* ABOUT-US */
+#about-us {
+    display: flex;
+    justify-content: center;
+    padding: 0 300px;
+    margin: 40px 0;
+}
+
+.info-1 {
+    margin-right: 20px;
+}
+
+.info-2 img {
+    height: 380px;
+}
+
+.info-1 p {
+    font-size: 1.15rem;
+}
+
+.title-content {
+    display: inline-flex;
+}
+
+.minus {
+    border: 3.5px #0072d3;
+    border-style: none none solid none;
+    width: 40px;
+    height: 12px;
+    margin-right: 10px;
+}    
+
+.text {
+    font-size: 12px;
+}
+
+/* OUR-BUSINESS */
+#our-business {
+    display: flex;
+    margin: 40px 0;
+}
+
+.left-img {
+    background-image: url('./img/Education2.jpg');
+    height: 450px;
+    flex: 1 1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+.right-img {
+    background-image: url('./img/Communication.jpg');
+    height: 450px;
+    flex: 1 1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.right-img > .title-content {
+    margin-top: 50px;
+    margin-bottom: 10px;
+    padding-left: 50px;
+    color: white;
+}
+
+.our-business, .our-education {
+    display: flex;
+}
+
+.our-education img, .our-business img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    position: absolute;
+    margin-left: -25px;
+    margin-top: 10px;
+}
+
+.education-content, .business-content {
+    padding-left: 50px;
+    color: white;
+}
+
+.education-content p, .business-content p {
+    font-size: 12px;
+}
+
+
+/* NEWS */
+#news {
+    padding: 0 300px;
+}
+
+.news-custom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.item-news {
+    border: 1px solid rgb(219, 219, 219);
+    width: 290px;
+    height: fit-content;
+    padding-bottom: 10px;
+}
+
+.item-news img {
+    height: 150px;
+    margin: center;
+    width: 288px;
+}
+
+.item-news h4, .item-news p, .item-news a {
+    text-decoration: none;
+    color: black;
+    padding: 0 10px;  
+}
+
+/* CONTACTS */
+#contacts {
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.contacts-custom {
+    display: flex;
+    padding: 0 300px;
+    justify-content: space-between;
+}
+
+.form-mess {
+    padding-right: 10px;
+    flex: 1 1;
+}
+
+.info-contacts {
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+.info-contacts input {
+    width: 30%;
+    height: 30px;
+    padding: 0 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.mess-contacts textarea {
+    height: 150px;
+    margin-top: 20px;
+}
+
+.maps {
+    flex: 1 1;
+}
+
+.maps img {
+    width: 100%;
+    padding-left: 10px;
+}
+
+.mess-submit button {
+    width: fit-content;
+    background-color: rgb(255, 187, 0);
+    border: none;
+    margin-top: 20px;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.5rem;
+}
+
+/* == FOOTER == */
+footer > * {
+    flex: 1 100%;
+    background-color: black;
+}
+
+.footer-custom {
+    display: flex;
+    color: white;
+    padding: 30px 300px;
+}
+
+.title-footer {
+    font-size: 1em;
+    flex-flow: row wrap;
+}
+
+.item-footer {
+    flex: 4 0px;
+}
+
+.item-footer p {
+    color: rgb(212, 212, 212);
+    font-size: 11px;
+}
+
+.item-footer p span {
+    color: white;
+    font-size: 11px;
+}
+
+.email-box {
+    display: inline-flex;
+    width: 100%;
+    position: relative;
+    margin-top: 15px;
+}
+
+.email-box input {
+    width: 100%;
+    background-color: black;
+    border: 1px white;
+    border-style: none none solid none;
+    border-radius: 5px;
+    font-size: 11px;
+    height: 25px;
+    padding: 0 5px;
+}
+
+.email-box button {
+    position: absolute;
+    color: black;
+    font-size: 12px;
+    width: fit-content;
+    padding: 0 5px;
+    right: 0px;
+}
+
+
+.copy-right {
+    height: 40px;
+    margin-top: 0.2px;
+}
+
+.copy-right p {
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding-top: 10px;
+    font-size: 14px;
+}
