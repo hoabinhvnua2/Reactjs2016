@@ -6,9 +6,11 @@ user.firstName = 'React'
 user.lastName = 'HTML'
 user.name = "CSS"
 console.log('user befor', user)
+console.log(user.hasOwnProperty('name'))
+
 delete user.name
 console.log('user after', user)
-
+console.log(user.hasOwnProperty('name'))
 
 // B2: 
 function isEmpty(obj) {
