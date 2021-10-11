@@ -1,45 +1,4 @@
-// function checkInput__100() {
-//   // let n;
-//   let value;
-//   while (true) {
-//     let n = prompt("A number please? ", 0);
-//     if (n <= 100 || n === "" || n === null || !isFinite(n)) {
-//       console.log(n);
-//       continue;
-//     } else {
-//       alert("Đã tìm thấy số > 100");
-//       value = n;
-//       document.write(value);
-//       break;
-//     }
-//   }
-//   return value;
-// }
-
-// alert(checkInput__100());
-
-// function checkInput__100() {
-//   let value;
-//   do {
-//     let n = prompt("A number please? ", 0);
-//     if (n <= 100 || n === "" || n === null || !isFinite(n)) {
-//       console.log(n);
-//       continue;
-//     } else {
-//       alert("Đã tìm thấy số > 100");
-//       value = n;
-//       document.write(value);
-//       break;
-//     }
-//   } while (true);
-//   return value;
-// }
-
-// alert(checkInput__100());
-
-
 // Bài tập 1: Kiểm tra số chắn từ 2 đến 10 (dùng vòng lặp for )
-
 function kiemTraSoChan () {
   let numbers = [];
   for(let i = 2; i <= 10; i++) {
@@ -52,11 +11,9 @@ function kiemTraSoChan () {
   }
 }
 kiemTraSoChan ();
-// # Bài tập 1 
-
+// # Bài tập 1
 
 // Bài 2: Áp dụng vòng lắp  để nhập 1 só > 100. Nếu cố tình nhập sai yêu cầu đề nghị nhập lại đến khi nhập số  > 100 hoặc huỷ đầu vào khi nhập vào một mảng trống.
-
 function checkInput__100() {
   // let n;
   let value;
@@ -81,10 +38,9 @@ function checkInput__100() {
   return value;
 }
 alert(checkInput__100());
-
 // #: Bài tập 2
 
-// Bài Tập 3 
+// Bài Tập 3
 function findMinNumber(a,b) {
   // let minNumber;
   let min;
@@ -98,7 +54,7 @@ function findMinNumber(a,b) {
 findMinNumber(3,4);
 // ## : Bài Tập 3
 
-// Bài Tập 4 
+// Bài Tập 4
 var numberOne = prompt("Mời bạn nhập số thứ nhât")
 var numberTwo = prompt("Mời bạn nhập số thứ hai")
 var phepTinh = prompt("Mời bạn nhập phép tính ")
@@ -123,9 +79,7 @@ function tinhToan(numberOne,numberTwo,result) {
   }
 }
 console.log("Kết quả của phép tính là",tinhToan(numberOne,numberTwo,phepTinh));
-
 // ## Bài Tập 4
-
 
 // Bài tập 5: Kiểm tra số vừa nhập có phải là số nguyên tố không.
 function isPrimeNumber(x) {
@@ -145,19 +99,15 @@ function isPrimeNumber(x) {
             }
         }
     }
-    
+
 }
 isPrimeNumber(2);
 isPrimeNumber(3);
 isPrimeNumber(4);
-
-
 // ##: Bài tập 5: Kiểm tra số vừa nhập có phải là số nguyên tố không.
 
 
-
-
-// Bài tập: 
+// Bài tập:
 // Tạo ra 1 mảng rỗng
 // Thêm các phần tử vào mảng:  1, 3, 4, 7
 // Thêm 2 vào đầu mảng
@@ -165,26 +115,28 @@ isPrimeNumber(4);
 // Tìm ra số nhỏ nhất của mảng 2 cách
 // Tỉnh tổng phần tử mảng (2 cách)
 
-// let arr = [];
-// console.log(arr);
-// let arrEle = [1, 3, 4, 7];
-// console.log(arrEle);
-// let result = arr.concat(arrEle);
-// console.log(result);
+let arr = [];
+console.log(arr);
+let arrEle = [1, 3, 4, 7];
+console.log(arrEle);
+let result = arr.concat(arrEle);
+console.log(result);
 
-// result.unshift(2);
-// console.log(result);
+result.unshift(2);
+console.log(result);
 
-// // C1: So Lon Nhat
-// function maxNumber (a,b) {
-//   if (a > b) {
-//     console.log(a)
-//   } else {
-//     console.log(b)
-//   }
-//   // (a>b) ? a : b
-// }
-// maxNumber(54,45);
+// C1: So Lon Nhat
+function maxNumber (a,b) {
+  if (a > b) {
+    console.log(a)
+  } else {
+    console.log(b)
+  }
+  // (a>b) ? a : b
+}
+maxNumber(54, 45);
+// #### End:C1: So Lon Nhat
+
 
 // let resultLength = result.length;
 // console.log(resultLength)
@@ -207,12 +159,12 @@ isPrimeNumber(4);
 // maxNumberArr(result);
 
 
-// var arrN = [1,2,3];
-// var max = arrN.reduce(function(a, b) {
-//     // return Math.max(a, b);
-//     console.log(Math.max(a, b));
+var arrN = [1,2,3];
+var max = arrN.reduce(function(a, b) {
+    // return Math.max(a, b);
+    console.log(Math.max(a, b));
 
-// }, 0);
+}, 0);
 
 
 // ----------------- Tìm Số Lớn Nhất -------
@@ -344,10 +296,10 @@ findmin(arr)
 
 
 // ##### Cách 2 #####
-// array.reduce(function(prev, curr) {
-//     // return prev.Cost < curr.Cost ? prev : curr;
-//     console.log("Cach 2 Min",prev.Cost < curr.Cost ? prev : curr)
-// });
+array.reduce(function(prev, curr) {
+    // return prev.Cost < curr.Cost ? prev : curr;
+    console.log("Cach 2 Min",prev.Cost < curr.Cost ? prev : curr)
+});
 
 // ##### End: Cách 2 #####
 // --------- End: Tìm Số Nhỏ Nhất ----------
@@ -364,9 +316,9 @@ findmin(arr)
 
 // // Tính trung bình cộng của các số
 // const average = arr => arr.reduce( ( p, c ) => p + c, 0 ) / arr.length;
-    
+
 // const result = average( [ 4, 4, 5, 6, 6 ] ); // 5
-    
+
 // console.log("TBC",result);
 
 
@@ -409,6 +361,6 @@ while (--i) sum += arr[i];
 
 
 arr.reduce(function(prev, curr) {
-    // return prev.Cost < curr.Cost ? prev : curr;
-    console.log("Cach 2 Min",prev < curr ? prev : curr)
+  // return prev.Cost < curr.Cost ? prev : curr;
+  console.log("Cach 2 Min",prev < curr ? prev : curr)
 });
