@@ -19,3 +19,17 @@ function topSalary (salaries) {
 }
 
 console.log(topSalary(salaries));
+
+
+// @@@ Cách anh Bình giải @@@@
+
+// function topSalary(obj) {
+//   const arrValues = Object.values(obj);
+//   if(arrValues.every(item => item === 0 || item === null || item === '')) return null
+//   const maxSalary = Math.max(...arrValues)
+//   const index = arrValues.findIndex(v => v === maxSalary)
+//   console.log(Object.keys(obj)[index])
+// }
+// topSalary(salaries)
+
+// ##### End: ..... ####

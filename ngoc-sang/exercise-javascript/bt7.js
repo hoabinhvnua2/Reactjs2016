@@ -22,3 +22,26 @@ function getMaxSubSum(arr) {
 }
 
 console.log(getMaxSubSum(arr));
+
+
+// @@@@ Tham khảo cách giải của anh Bình @@@@
+
+// var arrNumber = [1, -2, 3, 4, -9, 6];
+// function getMaxSubSum(arr) {
+//   if (!arr.length) {
+//     return false
+//   }
+
+//   let sum = 0;
+//   let acc = 0;
+//   for (const item of arr) {
+//     acc += item;
+//     if(acc < 0 ) {acc = 0}
+//     sum = Math.max(acc, sum)  
+//   }
+//   return sum;
+// }
+
+// console.log("max sum", getMaxSubSum(arrNumber))
+
+// #### End...... #####

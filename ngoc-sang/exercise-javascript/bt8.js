@@ -11,3 +11,22 @@ function camelize(str) {
 }
 
 console.log(camelize("mY-short-string"));
+
+
+// @@@@ Tham khảo cách giải của anh Bình @@@@
+
+// function camelize(str) {
+//   const arrString = str.split('-');
+//   var text = arrString[0]
+
+//   for (let index = 1; index < arrString.length; index++) {
+//     text += (arrString[index][0].toUpperCase() + arrString[index].slice(1))
+//   }
+
+//   return text;
+// }
+
+// console.log(camelize("hadle-submit-form"))
+
+
+// #### End...... #####

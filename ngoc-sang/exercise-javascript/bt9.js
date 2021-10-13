@@ -12,3 +12,22 @@ function filterRangeInPlace(numberList, a ,b) {
 }
 
 console.log(filterRangeInPlace([6,3,1,5,7,8,9,2], 1, 8));
+
+
+// @@@@ Tham khảo cách giải của anh Bình @@@@
+
+// var numberArr = [1, 3, 5, 8, 9 , 6]; 
+
+// // in ra mảng vs đk 4 =< item <= 7
+// function filterRangeInPlace(arr, a, b) {
+//   if (!a && !b ) {
+//     return arr
+//   }
+//   const newArr = arr.filter((item) =>  a <= item && item <= b )
+//   console.log(newArr)
+// }
+
+// filterRangeInPlace(numberArr)
+
+
+// #### End...... #####

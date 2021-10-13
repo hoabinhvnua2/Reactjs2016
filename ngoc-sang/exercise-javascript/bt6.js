@@ -20,3 +20,19 @@ function sumInput() {
 }
 
 console.log(sumInput());
+
+// @@@@ Tham khảo cách giải của anh Bình @@@@
+
+// function sumInput() {
+//   const arr = []  
+//   while (true) {
+//     var item = prompt('Bạn nhập vào giá trị số');
+//     if (item === null || item === '' || !isFinite(item)) break;
+//     arr.push(+item);
+//   }
+//   const total = arr.reduce((acc, value) => acc += value, 0)
+//   return total;
+// }
+// console.log(sumInput())
+
+// #### End...... #####

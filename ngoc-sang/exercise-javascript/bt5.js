@@ -24,3 +24,29 @@ nameValue.unshift("Rap", "Reggae")
 
 console.log(nameValue);
 console.log(midValue);
+
+// @@@@ Bài anh Bình giải @@@@
+
+// var styles = ['Jazz', 'Blues', 'React', 'Css'];
+// styles.push('Rock-n-Roll');
+
+// function changeItem(arr) {
+//   const arrLength = arr.length;
+//   if (arrLength % 2 === 0) {
+//     return  false
+//   }
+
+//   const index = Math.floor((arrLength - 1) / 2);
+//   styles[index] = 'Classic';
+// }
+// changeItem(styles)
+
+// console.log(styles)
+
+// console.log(styles.shift())
+// styles.unshift('Rap')
+// styles.unshift('Reggae')
+
+// console.log(styles)
+
+//  ##### End: ..... ####
