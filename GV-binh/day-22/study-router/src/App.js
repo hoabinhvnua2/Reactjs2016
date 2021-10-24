@@ -31,7 +31,7 @@ function App() {
       {/* {console.log('render')}
       <p>Your Value: { value }</p>
       <button onClick={() => setValue(0)}>Click</button> */}
-      {/* <Router>
+      <Router>
         <Switch>
           <Route exact path="/login">
             <Login />
@@ -46,8 +46,8 @@ function App() {
             <Product />
           </Privaterouter>
         </Switch>
-      </Router> */}
-      <Dashboard />
+      </Router>
+      {/* <Dashboard /> */}
      
     </div>
   );
