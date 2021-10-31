@@ -19,7 +19,6 @@ const ProductPage = () => {
   useEffect(() => {
     fetchProducts();
   }, []);
-
   console.log("Products :", products);
   return (
     <div className="ui grid container">
