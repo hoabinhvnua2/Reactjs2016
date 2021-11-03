@@ -5,12 +5,13 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Toolbar from '@mui/material/Toolbar';
 import ShoppingCart from '@mui/icons-material/ShoppingCart';
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
+
 const NavBar = () => {
     return (
-        <div className="Nav-bar">
+        <div>
             <Box 
-                sx={{flexGrow: 1, backgroundColor: 'orange'}}
+                sx={{ flexGrow: 1 }}
             >
                 <AppBar position="static">
                     <Toolbar>
@@ -22,6 +23,7 @@ const NavBar = () => {
                             </Link>  
                         </Typography>
                         <ShoppingCart />
+                        {/* <p>{count}</p> */}
                     </Toolbar>
                 </AppBar>
             </Box>
