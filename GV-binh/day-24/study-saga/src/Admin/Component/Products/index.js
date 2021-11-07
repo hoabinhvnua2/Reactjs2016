@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import productAction from '../../Redux/Actions/Products'
+import productAction from '../../../Redux/Actions/Products'
 
 
 const Products = () => {

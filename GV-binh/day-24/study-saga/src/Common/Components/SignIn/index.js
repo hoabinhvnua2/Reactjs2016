@@ -16,6 +16,8 @@ import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { useForm } from "react-hook-form";
 import * as yup from 'yup';
 import { yupResolver } from '@hookform/resolvers/yup';
+import { useHistory } from "react-router";
+import { ROLES } from "../../Roles";
 
 function Copyright(props) {
   return (
@@ -42,7 +44,8 @@ const loginSchema = yup.object().shape({
   password: yup.string().required('This is required!')
 })
 
-const Login = () => {
+const SignIn = () => {
+  const history = useHistory();
 
   const { register, handleSubmit, formState: { errors } } = useForm({
     resolver: yupResolver(loginSchema)
@@ -50,10 +53,9 @@ const Login = () => {
 
   const submit = (data) => {
     console.log('data', data);
-    console.log('err', errors);
+    localStorage.setItem('auth', JSON.stringify({...data, role: ROLES.STAFF}))
+    history.push('/admin')
   };
-
-  console.log('err', errors);
 
   return (
     <ThemeProvider theme={theme}>
@@ -135,4 +137,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default SignIn;
