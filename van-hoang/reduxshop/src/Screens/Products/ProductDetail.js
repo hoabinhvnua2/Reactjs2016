@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect} from "react";
 import axios from "axios";
 import { useParams } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
@@ -6,6 +6,7 @@ import {
   selectedProduct,
   removeSelectedProduct,
 } from "../../Redux/actions/productsActions";
+
 const ProductDetails = () => {
   const { productId } = useParams();
   let product = useSelector((state) => state.product);
@@ -19,7 +20,6 @@ const ProductDetails = () => {
       });
     dispatch(selectedProduct(response.data));
   };
-
   useEffect(() => {
     if (productId && productId !== "") fetchProductDetail(productId);
     return () => {
@@ -49,7 +49,6 @@ const ProductDetails = () => {
                   <div className="hidden content">
                     <i className="shop icon"></i>
                   </div>
-                  <div className="visible content">Add to Cart</div>
                 </div>
               </div>
             </div>
