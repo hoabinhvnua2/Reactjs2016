@@ -1,8 +1,9 @@
 import  React, { useEffect, useState } from 'react';
 import { Link, useHistory } from "react-router-dom";
-import { auth, signInWithEmailAndPassword } from "../firebase";
+import { auth, signInWithEmailAndPassword, signInWithGoogle } from "../firebase";
 import { useAuthState } from "react-firebase-hooks/auth";
 import "./Login.css" ;
+import logo from "../Photos/logo.png";
 
 function Login(){
     const [email, setEmail] = useState("");
@@ -16,8 +17,9 @@ function Login(){
         if (user) history.replace("/dashboard");
       }, [user, loading]);
       return (
-          <div>
-              <div>
+          <div className="login">
+              <div className="login__container">
+              <img src={logo} alt={"logo"}></img>
                 <input
                     type="text"
                     className="login__textBox"
