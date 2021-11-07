@@ -1,16 +1,28 @@
-import logo from './logo.svg';
+
 import './App.css';
-import Products from './Component/Products';
-import Login from './Component/Login';
-import SignUp from './Component/SignUp';
+import { Router, Switch, Route } from 'react-router-dom';
+import { history } from './helper/history';
+import Home from './Home/Pages';
 
 function App() {
   return (
-    <div className="App">
-      {/* <Products /> */}
-      {/* <Login /> */}
-      <SignUp />
-    </div>
+    // <div className="App">
+    //   {/* <Products /> */}
+    //   {/* <Login /> */}
+    //   <SignUp />
+    // </div>
+    <Router history={history}>
+
+      <Switch>
+        <Route path="/" exact>
+           <Home/>
+        </Route>
+        {/* <Route path="/" exact>
+           <Home/>
+        </Route> */}
+      </Switch>
+
+    </Router>
   );
 }
 

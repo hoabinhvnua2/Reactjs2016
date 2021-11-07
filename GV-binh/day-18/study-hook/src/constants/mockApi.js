@@ -15,3 +15,4 @@ export const productList = [
     quantity: 10,
   },
 ];
+export default productList
