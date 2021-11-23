@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
-import { useHistory } from "react-router";
+import { useHistory } from "react-router-dom";
 import "./Dashboard.css";
 import { auth, db, logout } from "../firebase";
-import axios from 'axios';
-import { NewsContextProvider } from "../Components/News/NewsContext";
-import News from "../Components/News/News";
+import Navbar from "../Components/Navbar/Navbar.jsx";
+import Posts from "../Components/Posts/Posts.jsx";
+
 function Dashboard() {
   const [user, loading, error] = useAuthState(auth);
   const [name, setName] = useState("");
@@ -20,7 +20,7 @@ function Dashboard() {
       setName(data.name);
     } catch (err) {
       console.error(err);
-      alert("An error occured while fetching user data");
+      // alert("An error occured while fetching user data");
     }
   };
   useEffect(() => {
@@ -30,17 +30,18 @@ function Dashboard() {
   }, [user, loading]);
   return (
     <div className="dashboard">
-      <div className="dashboard__container">
+      {/* <div className="dashboard__container">
         Logged in as
         <div>{name}</div>
         <div>{user?.email}</div>
         <button className="dashboard__btn" onClick={logout}>
           Logout
         </button>
+      </div> */}
+      <Navbar />
+      <div className = "home">
+        <Posts />
       </div>
-      <NewsContextProvider>
-        <News />
-      </NewsContextProvider>
     </div>
   );
 }
