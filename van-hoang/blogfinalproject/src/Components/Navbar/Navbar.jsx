@@ -6,6 +6,12 @@ import profile from "../../Photos/profile.jpg";
 export default function Navbar() {
   return (
     <div className="top">
+      <div className="topLeft">
+        <i className="topIcon fab fa-facebook-square"></i>
+        <i className="topIcon fab fa-twitter-square"></i>
+        <i className="topIcon fab fa-pinterest-square"></i>
+        <i className="topIcon fab fa-instagram-square"></i>
+      </div>
       <div className="topCenter">
         <ul className="topList">
           <li className="topListItem">
@@ -19,8 +25,8 @@ export default function Navbar() {
             </Link>
           </li>
           <li className="topListItem">
-            <Link className="link" to="/write">
-              WRITE
+            <Link className="link" to="/portfolio">
+              PORTFOLIO
             </Link>
           </li>
           <li className="topListItem" onClick={logout}>LOGOUT</li>
