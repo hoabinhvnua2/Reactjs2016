@@ -26,11 +26,41 @@ function Sidebar(){
             <div className="sidebarItem">
                 <span className="sidebarTitle">CATEGORIES</span>
                 <ul className="sidebarList">
-                    {cats.map((c) => (
+                    {/* {cats.map((c) => (
                 <Link to={`/?cat=${c.name}`} className="link">
                     <li className="sidebarListItem">{c.name}</li>
                 </Link>
-                    ))}
+                    ))} */}
+                    <li className="sidebarListItem">
+                        <Link className="link" to="/posts?cat=Life">
+                            Esports
+                        </Link>
+                    </li>
+                    <li className="sidebarListItem">
+                        <Link className="link" to="/posts?cat=Music">
+                            Music
+                        </Link>
+                    </li>
+                    <li className="sidebarListItem">
+                        <Link className="link" to="/posts?cat=News">
+                            News
+                        </Link>
+                    </li>
+                    <li className="sidebarListItem">
+                        <Link className="link" to="/posts?cat=English">
+                            English
+                        </Link>
+                    </li>
+                    <li className="sidebarListItem">
+                        <Link className="link" to="/posts?cat=Tech">
+                            Tech
+                        </Link>
+                    </li>
+                    <li className="sidebarListItem">
+                        <Link className="link" to="/posts?cat=Cinema">
+                        Cinema
+                        </Link>
+                    </li>
                 </ul>
             </div>
             <div className="sidebarItem">

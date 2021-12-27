@@ -7,8 +7,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url("../Photos/background.jpg");
-    background-repeat: repeat;
+    background-image: url("https://image.freepik.com/free-vector/white-abstract-background_23-2148806276.jpg");
     background-size: auto ;
     position: absolute;  
 }
@@ -37,4 +36,4 @@ body {
   }
   .register div {
     margin-top: 7px;
-  }
+  } 

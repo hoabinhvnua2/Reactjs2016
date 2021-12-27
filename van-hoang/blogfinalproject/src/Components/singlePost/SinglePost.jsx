@@ -14,6 +14,7 @@ function SinglePost(){
     const [title, setTitle] = useState("");
     const [desc, setDesc] = useState("");
     const [updateMode, setUpdateMode] = useState(false);
+    
     useEffect(() => {
         const getPost = async () => {
           const res = await axios.get("/posts/" + path);
@@ -27,7 +28,7 @@ function SinglePost(){
     const handleDelete = async () => {
         try {
           await axios.delete(`/posts/${post._id}`, {
-            data: { username: user.username },
+            data: { username: user.name },
           });
           window.location.replace("/");
         } catch (err) {}
@@ -35,7 +36,7 @@ function SinglePost(){
     const handleUpdate = async () => {
         try {
           await axios.put(`/posts/${post._id}`, {
-            username: user.username,
+            username: user.name,
             title,
             desc,
           });
@@ -59,7 +60,7 @@ function SinglePost(){
             ) : (
               <h1 className="singlePostTitle">
                 {title}
-                {post.username === user?.username && (
+                {post.username === user?.name && (
                   <div className="singlePostEdit">
                     <i
                       className="singlePostIcon far fa-edit"
@@ -76,8 +77,8 @@ function SinglePost(){
             <div className="singlePostInfo">
               <span className="singlePostAuthor">
                 Author:
-                <Link to={`/?user=${post.username}`} className="link">
-                  <b> {post.username}</b>
+                <Link to={`/?user=${post.name}`} className="link">
+                  <b> {post.name}</b>
                 </Link>
               </span>
               <span className="singlePostDate">

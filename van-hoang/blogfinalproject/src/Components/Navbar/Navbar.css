@@ -15,7 +15,7 @@
   flex: 3;
   display: flex;
   align-items: center;
-  background-color: tomato;
+  background-color: gray;
   justify-content: center;
 }
 
@@ -51,6 +51,7 @@
   font-size: 18px;
   font-weight: 300;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .topSearchIcon {
