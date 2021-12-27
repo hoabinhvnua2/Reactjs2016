@@ -9,6 +9,7 @@ import Header from "../Components/Header/Header.jsx";
 import Sidebar from "../Components/Sidebar/Sidebar.jsx";
 import { useLocation } from "react-router";
 import axios from "axios";
+
 function Dashboard() {
   const [user, loading, error] = useAuthState(auth);
   const [name, setName] = useState("");

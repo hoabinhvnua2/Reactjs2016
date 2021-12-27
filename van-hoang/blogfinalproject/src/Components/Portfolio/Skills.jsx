@@ -5,7 +5,7 @@ import "../../styles/skills.scss";
 import {
   ReactJs,
   Redux,
-  Reduxsaga,
+  Python,
   Sass,
   Javascript,
   Html5,
@@ -13,7 +13,6 @@ import {
   Nodedotjs,
   Express,
   Mysql,
-  R,
   Mongodb,
 } from "@icons-pack/react-simple-icons";
 
@@ -56,12 +55,6 @@ function Skills() {
           </div>
           <div className="skill-group">
             <div className="skill">
-              <Reduxsaga color="#999999" size={50} />
-            </div>
-            <p className="skill-info">Redux-Saga</p>
-          </div>
-          <div className="skill-group">
-            <div className="skill">
               <Sass color="#CC6699" size={50} />
             </div>
             <p className="skill-info">SASS</p>
@@ -86,9 +79,9 @@ function Skills() {
         <div className="skills-infos">
           <div className="skill-group">
             <div className="skill">
-              <R color="#276DC3" size={50} />
+              <Python color="#276DC3" size={50} />
             </div>
-            <p className="skill-info">R</p>
+            <p className="skill-info">Python</p>
           </div>
           <div className="skill-group">
             <div className="skill">
